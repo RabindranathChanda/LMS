@@ -24,47 +24,55 @@ Partial Class Dashboard
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
         icon_img = New PictureBox()
-        Dash_img = New PictureBox()
         Close_img = New PictureBox()
-        Label1 = New Label()
         Main_panel = New Panel()
+        Help_Panel = New Panel()
+        Creds_btn = New Button()
+        User_Panel = New Panel()
+        AllUsr_btn = New Button()
+        Profile_btn = New Button()
+        Cust_Panel = New Panel()
+        BKReturn_btn = New Button()
+        CustSearch_btn = New Button()
+        Book_Panel = New Panel()
+        BKSearch_btn = New Button()
+        BKIssue_btn = New Button()
+        AddBK_btn = New Button()
         Admin_Panel = New Panel()
-        Student_Panel = New Panel()
+        Customer_Panel = New Panel()
         BkIssue_panel = New Panel()
         BkSearch_Panel = New Panel()
         SearchCustomer_Panel = New Panel()
         CurrentProfile_Panel = New Panel()
         AllUsers_Panel = New Panel()
         Credits_Panel = New Panel()
-        MenuStrip1 = New MenuStrip()
-        Registration = New ToolStripMenuItem()
-        AsAdmin = New ToolStripMenuItem()
-        AsStudent = New ToolStripMenuItem()
-        Books = New ToolStripMenuItem()
-        BookIssue = New ToolStripMenuItem()
-        BookSearch = New ToolStripMenuItem()
-        BookReturn = New ToolStripMenuItem()
-        Customer = New ToolStripMenuItem()
-        SearchCoustomer = New ToolStripMenuItem()
-        Users = New ToolStripMenuItem()
-        CrntProfile = New ToolStripMenuItem()
-        AllUsr = New ToolStripMenuItem()
-        Help = New ToolStripMenuItem()
-        Credits = New ToolStripMenuItem()
         BkReturn_Panel = New Panel()
+        Reg_panel = New Panel()
+        Customer_btn = New Button()
+        Admin_btn = New Button()
+        Menu = New Panel()
+        Help_btn = New Button()
+        Usr_btn = New Button()
+        Cust_btn = New Button()
+        BK_btn = New Button()
+        Reg_btn = New Button()
         CType(icon_img, ComponentModel.ISupportInitialize).BeginInit()
-        CType(Dash_img, ComponentModel.ISupportInitialize).BeginInit()
         CType(Close_img, ComponentModel.ISupportInitialize).BeginInit()
         Main_panel.SuspendLayout()
+        Help_Panel.SuspendLayout()
+        User_Panel.SuspendLayout()
+        Cust_Panel.SuspendLayout()
+        Book_Panel.SuspendLayout()
         Admin_Panel.SuspendLayout()
-        Student_Panel.SuspendLayout()
+        Customer_Panel.SuspendLayout()
         BkIssue_panel.SuspendLayout()
         BkSearch_Panel.SuspendLayout()
         SearchCustomer_Panel.SuspendLayout()
         CurrentProfile_Panel.SuspendLayout()
         AllUsers_Panel.SuspendLayout()
         Credits_Panel.SuspendLayout()
-        MenuStrip1.SuspendLayout()
+        Reg_panel.SuspendLayout()
+        Menu.SuspendLayout()
         SuspendLayout()
         ' 
         ' icon_img
@@ -77,17 +85,6 @@ Partial Class Dashboard
         icon_img.TabIndex = 0
         icon_img.TabStop = False
         ' 
-        ' Dash_img
-        ' 
-        Dash_img.Dock = DockStyle.Fill
-        Dash_img.Image = My.Resources.Resources.Dashboard
-        Dash_img.Location = New Point(0, 0)
-        Dash_img.Name = "Dash_img"
-        Dash_img.Size = New Size(1106, 697)
-        Dash_img.SizeMode = PictureBoxSizeMode.StretchImage
-        Dash_img.TabIndex = 1
-        Dash_img.TabStop = False
-        ' 
         ' Close_img
         ' 
         Close_img.Image = My.Resources.Resources.close
@@ -98,291 +95,385 @@ Partial Class Dashboard
         Close_img.TabIndex = 2
         Close_img.TabStop = False
         ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Bookman Old Style", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.Fuchsia
-        Label1.Location = New Point(41, 9)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(0, 14)
-        Label1.TabIndex = 3
-        ' 
         ' Main_panel
         ' 
         Main_panel.BackColor = Color.White
+        Main_panel.BackgroundImage = My.Resources.Resources.Dashboard1
+        Main_panel.BackgroundImageLayout = ImageLayout.Stretch
+        Main_panel.Controls.Add(Help_Panel)
+        Main_panel.Controls.Add(User_Panel)
+        Main_panel.Controls.Add(Cust_Panel)
+        Main_panel.Controls.Add(Book_Panel)
         Main_panel.Controls.Add(Admin_Panel)
-        Main_panel.Controls.Add(MenuStrip1)
-        Main_panel.Location = New Point(10, 33)
+        Main_panel.Controls.Add(Reg_panel)
+        Main_panel.Controls.Add(Menu)
+        Main_panel.Dock = DockStyle.Fill
+        Main_panel.Location = New Point(0, 0)
         Main_panel.Name = "Main_panel"
-        Main_panel.Size = New Size(1084, 650)
+        Main_panel.Size = New Size(1106, 697)
         Main_panel.TabIndex = 0
+        ' 
+        ' Help_Panel
+        ' 
+        Help_Panel.BackColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        Help_Panel.Controls.Add(Creds_btn)
+        Help_Panel.Location = New Point(1, 29)
+        Help_Panel.Name = "Help_Panel"
+        Help_Panel.Size = New Size(1106, 30)
+        Help_Panel.TabIndex = 7
+        ' 
+        ' Creds_btn
+        ' 
+        Creds_btn.BackColor = Color.White
+        Creds_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        Creds_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        Creds_btn.Location = New Point(11, 3)
+        Creds_btn.Name = "Creds_btn"
+        Creds_btn.Size = New Size(75, 23)
+        Creds_btn.TabIndex = 0
+        Creds_btn.Text = "Credits"
+        Creds_btn.UseVisualStyleBackColor = False
+        ' 
+        ' User_Panel
+        ' 
+        User_Panel.BackColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        User_Panel.Controls.Add(AllUsr_btn)
+        User_Panel.Controls.Add(Profile_btn)
+        User_Panel.Location = New Point(1, 29)
+        User_Panel.Name = "User_Panel"
+        User_Panel.Size = New Size(1106, 30)
+        User_Panel.TabIndex = 6
+        ' 
+        ' AllUsr_btn
+        ' 
+        AllUsr_btn.BackColor = Color.White
+        AllUsr_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        AllUsr_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        AllUsr_btn.Location = New Point(92, 4)
+        AllUsr_btn.Name = "AllUsr_btn"
+        AllUsr_btn.Size = New Size(75, 23)
+        AllUsr_btn.TabIndex = 1
+        AllUsr_btn.Text = "All Users"
+        AllUsr_btn.UseVisualStyleBackColor = False
+        ' 
+        ' Profile_btn
+        ' 
+        Profile_btn.BackColor = Color.White
+        Profile_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        Profile_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        Profile_btn.Location = New Point(11, 4)
+        Profile_btn.Name = "Profile_btn"
+        Profile_btn.Size = New Size(75, 23)
+        Profile_btn.TabIndex = 0
+        Profile_btn.Text = "Profile"
+        Profile_btn.UseVisualStyleBackColor = False
+        ' 
+        ' Cust_Panel
+        ' 
+        Cust_Panel.BackColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        Cust_Panel.Controls.Add(BKReturn_btn)
+        Cust_Panel.Controls.Add(CustSearch_btn)
+        Cust_Panel.Location = New Point(1, 29)
+        Cust_Panel.Name = "Cust_Panel"
+        Cust_Panel.Size = New Size(1106, 30)
+        Cust_Panel.TabIndex = 5
+        ' 
+        ' BKReturn_btn
+        ' 
+        BKReturn_btn.BackColor = Color.White
+        BKReturn_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        BKReturn_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        BKReturn_btn.Location = New Point(11, 4)
+        BKReturn_btn.Name = "BKReturn_btn"
+        BKReturn_btn.Size = New Size(86, 23)
+        BKReturn_btn.TabIndex = 1
+        BKReturn_btn.Text = "Return Book"
+        BKReturn_btn.UseVisualStyleBackColor = False
+        ' 
+        ' CustSearch_btn
+        ' 
+        CustSearch_btn.BackColor = Color.White
+        CustSearch_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        CustSearch_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        CustSearch_btn.Location = New Point(103, 4)
+        CustSearch_btn.Name = "CustSearch_btn"
+        CustSearch_btn.Size = New Size(115, 23)
+        CustSearch_btn.TabIndex = 0
+        CustSearch_btn.Text = "Search Customer"
+        CustSearch_btn.UseVisualStyleBackColor = False
+        ' 
+        ' Book_Panel
+        ' 
+        Book_Panel.BackColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        Book_Panel.Controls.Add(BKSearch_btn)
+        Book_Panel.Controls.Add(BKIssue_btn)
+        Book_Panel.Controls.Add(AddBK_btn)
+        Book_Panel.Location = New Point(0, 29)
+        Book_Panel.Name = "Book_Panel"
+        Book_Panel.Size = New Size(1106, 30)
+        Book_Panel.TabIndex = 4
+        ' 
+        ' BKSearch_btn
+        ' 
+        BKSearch_btn.BackColor = Color.White
+        BKSearch_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        BKSearch_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        BKSearch_btn.Location = New Point(174, 4)
+        BKSearch_btn.Name = "BKSearch_btn"
+        BKSearch_btn.Size = New Size(75, 23)
+        BKSearch_btn.TabIndex = 5
+        BKSearch_btn.Text = "Search"
+        BKSearch_btn.UseVisualStyleBackColor = False
+        ' 
+        ' BKIssue_btn
+        ' 
+        BKIssue_btn.BackColor = Color.White
+        BKIssue_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        BKIssue_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        BKIssue_btn.Location = New Point(93, 4)
+        BKIssue_btn.Name = "BKIssue_btn"
+        BKIssue_btn.Size = New Size(75, 23)
+        BKIssue_btn.TabIndex = 4
+        BKIssue_btn.Text = "Issue"
+        BKIssue_btn.UseVisualStyleBackColor = False
+        ' 
+        ' AddBK_btn
+        ' 
+        AddBK_btn.BackColor = Color.White
+        AddBK_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        AddBK_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        AddBK_btn.Location = New Point(12, 4)
+        AddBK_btn.Name = "AddBK_btn"
+        AddBK_btn.Size = New Size(75, 23)
+        AddBK_btn.TabIndex = 3
+        AddBK_btn.Text = "Add Book"
+        AddBK_btn.UseVisualStyleBackColor = False
         ' 
         ' Admin_Panel
         ' 
-        Admin_Panel.Controls.Add(Student_Panel)
+        Admin_Panel.BackgroundImage = My.Resources.Resources.Reg_Panel_Admin
+        Admin_Panel.BackgroundImageLayout = ImageLayout.Stretch
+        Admin_Panel.Controls.Add(Customer_Panel)
         Admin_Panel.Dock = DockStyle.Fill
-        Admin_Panel.Location = New Point(0, 24)
+        Admin_Panel.Location = New Point(0, 60)
         Admin_Panel.Name = "Admin_Panel"
-        Admin_Panel.Size = New Size(1084, 626)
+        Admin_Panel.Size = New Size(1106, 637)
         Admin_Panel.TabIndex = 1
         ' 
-        ' Student_Panel
+        ' Customer_Panel
         ' 
-        Student_Panel.Controls.Add(BkIssue_panel)
-        Student_Panel.Dock = DockStyle.Fill
-        Student_Panel.Location = New Point(0, 0)
-        Student_Panel.Name = "Student_Panel"
-        Student_Panel.Size = New Size(1084, 626)
-        Student_Panel.TabIndex = 0
+        Customer_Panel.BackgroundImage = My.Resources.Resources.Reg_Panel_Cust
+        Customer_Panel.BackgroundImageLayout = ImageLayout.Stretch
+        Customer_Panel.Controls.Add(BkIssue_panel)
+        Customer_Panel.Dock = DockStyle.Fill
+        Customer_Panel.Location = New Point(0, 0)
+        Customer_Panel.Name = "Customer_Panel"
+        Customer_Panel.Size = New Size(1106, 637)
+        Customer_Panel.TabIndex = 0
         ' 
         ' BkIssue_panel
         ' 
         BkIssue_panel.Controls.Add(BkSearch_Panel)
-        BkIssue_panel.Dock = DockStyle.Fill
-        BkIssue_panel.Location = New Point(0, 0)
+        BkIssue_panel.Location = New Point(0, 274)
         BkIssue_panel.Name = "BkIssue_panel"
-        BkIssue_panel.Size = New Size(1084, 626)
+        BkIssue_panel.Size = New Size(923, 352)
         BkIssue_panel.TabIndex = 0
         ' 
         ' BkSearch_Panel
         ' 
         BkSearch_Panel.Controls.Add(SearchCustomer_Panel)
-        BkSearch_Panel.Dock = DockStyle.Fill
-        BkSearch_Panel.Location = New Point(0, 0)
+        BkSearch_Panel.Location = New Point(0, 247)
         BkSearch_Panel.Name = "BkSearch_Panel"
-        BkSearch_Panel.Size = New Size(1084, 626)
+        BkSearch_Panel.Size = New Size(948, 379)
         BkSearch_Panel.TabIndex = 0
         ' 
         ' SearchCustomer_Panel
         ' 
         SearchCustomer_Panel.Controls.Add(CurrentProfile_Panel)
-        SearchCustomer_Panel.Dock = DockStyle.Fill
-        SearchCustomer_Panel.Location = New Point(0, 0)
+        SearchCustomer_Panel.Location = New Point(0, 168)
         SearchCustomer_Panel.Name = "SearchCustomer_Panel"
-        SearchCustomer_Panel.Size = New Size(1084, 626)
+        SearchCustomer_Panel.Size = New Size(977, 458)
         SearchCustomer_Panel.TabIndex = 0
         ' 
         ' CurrentProfile_Panel
         ' 
         CurrentProfile_Panel.Controls.Add(AllUsers_Panel)
-        CurrentProfile_Panel.Dock = DockStyle.Fill
-        CurrentProfile_Panel.Location = New Point(0, 0)
+        CurrentProfile_Panel.Location = New Point(0, 209)
         CurrentProfile_Panel.Name = "CurrentProfile_Panel"
-        CurrentProfile_Panel.Size = New Size(1084, 626)
+        CurrentProfile_Panel.Size = New Size(978, 417)
         CurrentProfile_Panel.TabIndex = 0
         ' 
         ' AllUsers_Panel
         ' 
         AllUsers_Panel.Controls.Add(Credits_Panel)
-        AllUsers_Panel.Dock = DockStyle.Fill
-        AllUsers_Panel.Location = New Point(0, 0)
+        AllUsers_Panel.Location = New Point(0, 58)
         AllUsers_Panel.Name = "AllUsers_Panel"
-        AllUsers_Panel.Size = New Size(1084, 626)
+        AllUsers_Panel.Size = New Size(1036, 568)
         AllUsers_Panel.TabIndex = 0
         ' 
         ' Credits_Panel
         ' 
         Credits_Panel.Controls.Add(BkReturn_Panel)
-        Credits_Panel.Dock = DockStyle.Fill
-        Credits_Panel.Location = New Point(0, 0)
+        Credits_Panel.Location = New Point(0, 193)
         Credits_Panel.Name = "Credits_Panel"
-        Credits_Panel.Size = New Size(1084, 626)
+        Credits_Panel.Size = New Size(838, 433)
         Credits_Panel.TabIndex = 0
-        ' 
-        ' MenuStrip1
-        ' 
-        MenuStrip1.BackColor = Color.Indigo
-        MenuStrip1.Font = New Font("Bookman Old Style", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        MenuStrip1.Items.AddRange(New ToolStripItem() {Registration, Books, Customer, Users, Help})
-        MenuStrip1.Location = New Point(0, 0)
-        MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Size = New Size(1084, 24)
-        MenuStrip1.TabIndex = 0
-        MenuStrip1.Text = "MenuStrip1"
-        ' 
-        ' Registration
-        ' 
-        Registration.BackColor = Color.White
-        Registration.DropDownItems.AddRange(New ToolStripItem() {AsAdmin, AsStudent})
-        Registration.ForeColor = Color.Indigo
-        Registration.Name = "Registration"
-        Registration.Size = New Size(101, 20)
-        Registration.Text = "Registration"
-        ' 
-        ' AsAdmin
-        ' 
-        AsAdmin.BackColor = Color.White
-        AsAdmin.ForeColor = Color.Indigo
-        AsAdmin.Name = "AsAdmin"
-        AsAdmin.Size = New Size(234, 22)
-        AsAdmin.Text = "As Admin"
-        ' 
-        ' AsStudent
-        ' 
-        AsStudent.BackColor = Color.White
-        AsStudent.ForeColor = Color.Indigo
-        AsStudent.Name = "AsStudent"
-        AsStudent.Size = New Size(234, 22)
-        AsStudent.Text = "As Student / Coustomer"
-        ' 
-        ' Books
-        ' 
-        Books.BackColor = Color.White
-        Books.DropDownItems.AddRange(New ToolStripItem() {BookIssue, BookSearch, BookReturn})
-        Books.ForeColor = Color.Indigo
-        Books.Name = "Books"
-        Books.Size = New Size(59, 20)
-        Books.Text = "Books"
-        ' 
-        ' BookIssue
-        ' 
-        BookIssue.BackColor = Color.White
-        BookIssue.ForeColor = Color.Indigo
-        BookIssue.Name = "BookIssue"
-        BookIssue.Size = New Size(180, 22)
-        BookIssue.Text = "Issue"
-        ' 
-        ' BookSearch
-        ' 
-        BookSearch.BackColor = Color.White
-        BookSearch.ForeColor = Color.Indigo
-        BookSearch.Name = "BookSearch"
-        BookSearch.Size = New Size(180, 22)
-        BookSearch.Text = "Search"
-        ' 
-        ' BookReturn
-        ' 
-        BookReturn.BackColor = Color.White
-        BookReturn.ForeColor = Color.Indigo
-        BookReturn.Name = "BookReturn"
-        BookReturn.Size = New Size(180, 22)
-        BookReturn.Text = "Return"
-        ' 
-        ' Customer
-        ' 
-        Customer.BackColor = Color.White
-        Customer.DropDownItems.AddRange(New ToolStripItem() {SearchCoustomer})
-        Customer.ForeColor = Color.Indigo
-        Customer.Name = "Customer"
-        Customer.Size = New Size(83, 20)
-        Customer.Text = "Customer"
-        ' 
-        ' SearchCoustomer
-        ' 
-        SearchCoustomer.BackColor = Color.White
-        SearchCoustomer.ForeColor = Color.Indigo
-        SearchCoustomer.Name = "SearchCoustomer"
-        SearchCoustomer.Size = New Size(193, 22)
-        SearchCoustomer.Text = "Search Coustomer"
-        ' 
-        ' Users
-        ' 
-        Users.BackColor = Color.White
-        Users.DropDownItems.AddRange(New ToolStripItem() {CrntProfile, AllUsr})
-        Users.ForeColor = Color.Indigo
-        Users.Name = "Users"
-        Users.Size = New Size(55, 20)
-        Users.Text = "Users"
-        ' 
-        ' CrntProfile
-        ' 
-        CrntProfile.BackColor = Color.White
-        CrntProfile.ForeColor = Color.Indigo
-        CrntProfile.Name = "CrntProfile"
-        CrntProfile.Size = New Size(180, 22)
-        CrntProfile.Text = "Current Profile"
-        ' 
-        ' AllUsr
-        ' 
-        AllUsr.BackColor = Color.White
-        AllUsr.ForeColor = Color.Indigo
-        AllUsr.Name = "AllUsr"
-        AllUsr.Size = New Size(180, 22)
-        AllUsr.Text = "Show all Users"
-        ' 
-        ' Help
-        ' 
-        Help.BackColor = Color.White
-        Help.DropDownItems.AddRange(New ToolStripItem() {Credits})
-        Help.ForeColor = Color.Indigo
-        Help.Name = "Help"
-        Help.Size = New Size(49, 20)
-        Help.Text = "Help"
-        ' 
-        ' Credits
-        ' 
-        Credits.BackColor = Color.White
-        Credits.ForeColor = Color.Indigo
-        Credits.Name = "Credits"
-        Credits.Size = New Size(180, 22)
-        Credits.Text = "Credits"
         ' 
         ' BkReturn_Panel
         ' 
-        BkReturn_Panel.Dock = DockStyle.Fill
-        BkReturn_Panel.Location = New Point(0, 0)
+        BkReturn_Panel.Location = New Point(0, 17)
         BkReturn_Panel.Name = "BkReturn_Panel"
-        BkReturn_Panel.Size = New Size(1084, 626)
+        BkReturn_Panel.Size = New Size(819, 609)
         BkReturn_Panel.TabIndex = 0
+        ' 
+        ' Reg_panel
+        ' 
+        Reg_panel.BackColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        Reg_panel.Controls.Add(Customer_btn)
+        Reg_panel.Controls.Add(Admin_btn)
+        Reg_panel.Dock = DockStyle.Top
+        Reg_panel.Location = New Point(0, 30)
+        Reg_panel.Name = "Reg_panel"
+        Reg_panel.Size = New Size(1106, 30)
+        Reg_panel.TabIndex = 3
+        ' 
+        ' Customer_btn
+        ' 
+        Customer_btn.BackColor = Color.White
+        Customer_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        Customer_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        Customer_btn.Location = New Point(93, 3)
+        Customer_btn.Name = "Customer_btn"
+        Customer_btn.Size = New Size(75, 23)
+        Customer_btn.TabIndex = 5
+        Customer_btn.Text = "Customer"
+        Customer_btn.UseVisualStyleBackColor = False
+        ' 
+        ' Admin_btn
+        ' 
+        Admin_btn.BackColor = Color.White
+        Admin_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        Admin_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        Admin_btn.Location = New Point(12, 4)
+        Admin_btn.Name = "Admin_btn"
+        Admin_btn.Size = New Size(75, 23)
+        Admin_btn.TabIndex = 4
+        Admin_btn.Text = "Admin"
+        Admin_btn.UseVisualStyleBackColor = False
+        ' 
+        ' Menu
+        ' 
+        Menu.BackColor = Color.Indigo
+        Menu.Controls.Add(Help_btn)
+        Menu.Controls.Add(Usr_btn)
+        Menu.Controls.Add(Cust_btn)
+        Menu.Controls.Add(BK_btn)
+        Menu.Controls.Add(Reg_btn)
+        Menu.Controls.Add(Close_img)
+        Menu.Controls.Add(icon_img)
+        Menu.Dock = DockStyle.Top
+        Menu.Location = New Point(0, 0)
+        Menu.Name = "Menu"
+        Menu.Size = New Size(1106, 30)
+        Menu.TabIndex = 2
+        ' 
+        ' Help_btn
+        ' 
+        Help_btn.BackColor = Color.White
+        Help_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        Help_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        Help_btn.Location = New Point(367, 4)
+        Help_btn.Name = "Help_btn"
+        Help_btn.Size = New Size(75, 23)
+        Help_btn.TabIndex = 7
+        Help_btn.Text = "Help"
+        Help_btn.UseVisualStyleBackColor = False
+        ' 
+        ' Usr_btn
+        ' 
+        Usr_btn.BackColor = Color.White
+        Usr_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        Usr_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        Usr_btn.Location = New Point(286, 4)
+        Usr_btn.Name = "Usr_btn"
+        Usr_btn.Size = New Size(75, 23)
+        Usr_btn.TabIndex = 6
+        Usr_btn.Text = "Users"
+        Usr_btn.UseVisualStyleBackColor = False
+        ' 
+        ' Cust_btn
+        ' 
+        Cust_btn.BackColor = Color.White
+        Cust_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        Cust_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        Cust_btn.Location = New Point(205, 4)
+        Cust_btn.Name = "Cust_btn"
+        Cust_btn.Size = New Size(75, 23)
+        Cust_btn.TabIndex = 5
+        Cust_btn.Text = "Customer"
+        Cust_btn.UseVisualStyleBackColor = False
+        ' 
+        ' BK_btn
+        ' 
+        BK_btn.BackColor = Color.White
+        BK_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        BK_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        BK_btn.Location = New Point(124, 4)
+        BK_btn.Name = "BK_btn"
+        BK_btn.Size = New Size(75, 23)
+        BK_btn.TabIndex = 4
+        BK_btn.Text = "Books"
+        BK_btn.UseVisualStyleBackColor = False
+        ' 
+        ' Reg_btn
+        ' 
+        Reg_btn.BackColor = Color.White
+        Reg_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        Reg_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        Reg_btn.Location = New Point(43, 4)
+        Reg_btn.Name = "Reg_btn"
+        Reg_btn.Size = New Size(75, 23)
+        Reg_btn.TabIndex = 3
+        Reg_btn.Text = "Register"
+        Reg_btn.UseVisualStyleBackColor = False
         ' 
         ' Dashboard
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1106, 697)
         Controls.Add(Main_panel)
-        Controls.Add(Label1)
-        Controls.Add(Close_img)
-        Controls.Add(icon_img)
-        Controls.Add(Dash_img)
         FormBorderStyle = FormBorderStyle.None
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
-        MainMenuStrip = MenuStrip1
         Name = "Dashboard"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Dashboard"
         CType(icon_img, ComponentModel.ISupportInitialize).EndInit()
-        CType(Dash_img, ComponentModel.ISupportInitialize).EndInit()
         CType(Close_img, ComponentModel.ISupportInitialize).EndInit()
         Main_panel.ResumeLayout(False)
-        Main_panel.PerformLayout()
+        Help_Panel.ResumeLayout(False)
+        User_Panel.ResumeLayout(False)
+        Cust_Panel.ResumeLayout(False)
+        Book_Panel.ResumeLayout(False)
         Admin_Panel.ResumeLayout(False)
-        Student_Panel.ResumeLayout(False)
+        Customer_Panel.ResumeLayout(False)
         BkIssue_panel.ResumeLayout(False)
         BkSearch_Panel.ResumeLayout(False)
         SearchCustomer_Panel.ResumeLayout(False)
         CurrentProfile_Panel.ResumeLayout(False)
         AllUsers_Panel.ResumeLayout(False)
         Credits_Panel.ResumeLayout(False)
-        MenuStrip1.ResumeLayout(False)
-        MenuStrip1.PerformLayout()
+        Reg_panel.ResumeLayout(False)
+        Menu.ResumeLayout(False)
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
     Friend WithEvents icon_img As PictureBox
-    Friend WithEvents Dash_img As PictureBox
     Friend WithEvents Close_img As PictureBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents Main_panel As Panel
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents Registration As ToolStripMenuItem
-    Friend WithEvents Books As ToolStripMenuItem
-    Friend WithEvents Customer As ToolStripMenuItem
-    Friend WithEvents Users As ToolStripMenuItem
-    Friend WithEvents AsAdmin As ToolStripMenuItem
-    Friend WithEvents AsStudent As ToolStripMenuItem
-    Friend WithEvents BookIssue As ToolStripMenuItem
-    Friend WithEvents BookSearch As ToolStripMenuItem
-    Friend WithEvents BookReturn As ToolStripMenuItem
-    Friend WithEvents SearchCoustomer As ToolStripMenuItem
-    Friend WithEvents CrntProfile As ToolStripMenuItem
-    Friend WithEvents AllUsr As ToolStripMenuItem
-    Friend WithEvents Help As ToolStripMenuItem
-    Friend WithEvents Credits As ToolStripMenuItem
+    Friend WithEvents Menu As Panel
     Friend WithEvents Admin_Panel As Panel
-    Friend WithEvents Student_Panel As Panel
+    Friend WithEvents Customer_Panel As Panel
     Friend WithEvents BkIssue_panel As Panel
     Friend WithEvents BkSearch_Panel As Panel
     Friend WithEvents SearchCustomer_Panel As Panel
@@ -390,4 +481,28 @@ Partial Class Dashboard
     Friend WithEvents AllUsers_Panel As Panel
     Friend WithEvents Credits_Panel As Panel
     Friend WithEvents BkReturn_Panel As Panel
+    Friend WithEvents Reg_btn As Button
+    Friend WithEvents Cust_btn As Button
+    Friend WithEvents BK_btn As Button
+    Friend WithEvents Help_btn As Button
+    Friend WithEvents Usr_btn As Button
+    Friend WithEvents Reg_panel As Panel
+    Friend WithEvents Customer_btn As Button
+    Friend WithEvents Admin_btn As Button
+    Friend WithEvents Book_Panel As Panel
+    Friend WithEvents Cust_Panel As Panel
+    Friend WithEvents User_Panel As Panel
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Profile_btn As Button
+    Friend WithEvents AllUsr_btn As Button
+    Friend WithEvents Help_Panel As Panel
+    Friend WithEvents Creds_btn As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents CustSearch_btn As Button
+    Friend WithEvents AddBK_btn As Button
+    Friend WithEvents BKIssue_btn As Button
+    Friend WithEvents BKReturn_btn As Button
+    Friend WithEvents BKSearch_btn As Button
 End Class
