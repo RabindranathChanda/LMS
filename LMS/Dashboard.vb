@@ -85,4 +85,24 @@
         AllUsers_Panel.Hide()
         Credits_Panel.Hide()
     End Sub
+
+    Private Sub Admin_Fname_TBX_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Admin_Fname_TBX.KeyPress
+        If Len(Trim(Admin_Fname_TBX.Text)) = 0 Then
+            Label1.Text = ""
+        Else
+            Label1.Text = Admin_Fname_TBX.Text
+
+        End If
+    End Sub
+
+
+    'Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    '    If Len(Trim(Admin_Fname_TBX.Text)) = 0 Then
+    '        Label1.Text = ""
+    '    Else
+    '        Label1.Text = Admin_Fname_TBX.Text
+
+    '    End If
+    'End Sub
+
 End Class

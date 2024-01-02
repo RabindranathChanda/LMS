@@ -39,6 +39,18 @@ Partial Class Dashboard
         BKIssue_btn = New Button()
         AddBK_btn = New Button()
         Admin_Panel = New Panel()
+        Label1 = New Label()
+        Button3 = New Button()
+        Button2 = New Button()
+        Button1 = New Button()
+        Admin_login_showPass_chkbx = New CheckBox()
+        TextBox7 = New TextBox()
+        TextBox6 = New TextBox()
+        TextBox5 = New TextBox()
+        TextBox4 = New TextBox()
+        TextBox3 = New TextBox()
+        TextBox2 = New TextBox()
+        Admin_Fname_TBX = New TextBox()
         Customer_Panel = New Panel()
         BkIssue_panel = New Panel()
         BkSearch_Panel = New Panel()
@@ -125,7 +137,7 @@ Partial Class Dashboard
         ' Creds_btn
         ' 
         Creds_btn.BackColor = Color.White
-        Creds_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        Creds_btn.Font = New Font("Book Antiqua", 9F, FontStyle.Bold)
         Creds_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         Creds_btn.Location = New Point(11, 3)
         Creds_btn.Name = "Creds_btn"
@@ -147,7 +159,7 @@ Partial Class Dashboard
         ' AllUsr_btn
         ' 
         AllUsr_btn.BackColor = Color.White
-        AllUsr_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        AllUsr_btn.Font = New Font("Book Antiqua", 9F, FontStyle.Bold)
         AllUsr_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         AllUsr_btn.Location = New Point(92, 4)
         AllUsr_btn.Name = "AllUsr_btn"
@@ -159,7 +171,7 @@ Partial Class Dashboard
         ' Profile_btn
         ' 
         Profile_btn.BackColor = Color.White
-        Profile_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        Profile_btn.Font = New Font("Book Antiqua", 9F, FontStyle.Bold)
         Profile_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         Profile_btn.Location = New Point(11, 4)
         Profile_btn.Name = "Profile_btn"
@@ -181,7 +193,7 @@ Partial Class Dashboard
         ' BKReturn_btn
         ' 
         BKReturn_btn.BackColor = Color.White
-        BKReturn_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        BKReturn_btn.Font = New Font("Book Antiqua", 9F, FontStyle.Bold)
         BKReturn_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         BKReturn_btn.Location = New Point(11, 4)
         BKReturn_btn.Name = "BKReturn_btn"
@@ -193,7 +205,7 @@ Partial Class Dashboard
         ' CustSearch_btn
         ' 
         CustSearch_btn.BackColor = Color.White
-        CustSearch_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        CustSearch_btn.Font = New Font("Book Antiqua", 9F, FontStyle.Bold)
         CustSearch_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         CustSearch_btn.Location = New Point(103, 4)
         CustSearch_btn.Name = "CustSearch_btn"
@@ -216,7 +228,7 @@ Partial Class Dashboard
         ' BKSearch_btn
         ' 
         BKSearch_btn.BackColor = Color.White
-        BKSearch_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        BKSearch_btn.Font = New Font("Book Antiqua", 9F, FontStyle.Bold)
         BKSearch_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         BKSearch_btn.Location = New Point(174, 4)
         BKSearch_btn.Name = "BKSearch_btn"
@@ -228,7 +240,7 @@ Partial Class Dashboard
         ' BKIssue_btn
         ' 
         BKIssue_btn.BackColor = Color.White
-        BKIssue_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        BKIssue_btn.Font = New Font("Book Antiqua", 9F, FontStyle.Bold)
         BKIssue_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         BKIssue_btn.Location = New Point(93, 4)
         BKIssue_btn.Name = "BKIssue_btn"
@@ -240,7 +252,7 @@ Partial Class Dashboard
         ' AddBK_btn
         ' 
         AddBK_btn.BackColor = Color.White
-        AddBK_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        AddBK_btn.Font = New Font("Book Antiqua", 9F, FontStyle.Bold)
         AddBK_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         AddBK_btn.Location = New Point(12, 4)
         AddBK_btn.Name = "AddBK_btn"
@@ -253,6 +265,18 @@ Partial Class Dashboard
         ' 
         Admin_Panel.BackgroundImage = My.Resources.Resources.Reg_Panel_Admin
         Admin_Panel.BackgroundImageLayout = ImageLayout.Stretch
+        Admin_Panel.Controls.Add(Label1)
+        Admin_Panel.Controls.Add(Button3)
+        Admin_Panel.Controls.Add(Button2)
+        Admin_Panel.Controls.Add(Button1)
+        Admin_Panel.Controls.Add(Admin_login_showPass_chkbx)
+        Admin_Panel.Controls.Add(TextBox7)
+        Admin_Panel.Controls.Add(TextBox6)
+        Admin_Panel.Controls.Add(TextBox5)
+        Admin_Panel.Controls.Add(TextBox4)
+        Admin_Panel.Controls.Add(TextBox3)
+        Admin_Panel.Controls.Add(TextBox2)
+        Admin_Panel.Controls.Add(Admin_Fname_TBX)
         Admin_Panel.Controls.Add(Customer_Panel)
         Admin_Panel.Dock = DockStyle.Fill
         Admin_Panel.Location = New Point(0, 60)
@@ -260,15 +284,141 @@ Partial Class Dashboard
         Admin_Panel.Size = New Size(1106, 637)
         Admin_Panel.TabIndex = 1
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Book Antiqua", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.Cyan
+        Label1.Location = New Point(870, 400)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(59, 21)
+        Label1.TabIndex = 12
+        Label1.Text = "Label1"
+        ' 
+        ' Button3
+        ' 
+        Button3.Location = New Point(599, 502)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(115, 35)
+        Button3.TabIndex = 11
+        Button3.Text = "Button3"
+        Button3.UseVisualStyleBackColor = True
+        ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(367, 502)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(115, 35)
+        Button2.TabIndex = 10
+        Button2.Text = "Button2"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(137, 502)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(115, 35)
+        Button1.TabIndex = 9
+        Button1.Text = "Button1"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' Admin_login_showPass_chkbx
+        ' 
+        Admin_login_showPass_chkbx.AutoSize = True
+        Admin_login_showPass_chkbx.BackColor = Color.Transparent
+        Admin_login_showPass_chkbx.Font = New Font("Book Antiqua", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Admin_login_showPass_chkbx.ForeColor = Color.Cyan
+        Admin_login_showPass_chkbx.Location = New Point(83, 407)
+        Admin_login_showPass_chkbx.Name = "Admin_login_showPass_chkbx"
+        Admin_login_showPass_chkbx.Size = New Size(121, 21)
+        Admin_login_showPass_chkbx.TabIndex = 8
+        Admin_login_showPass_chkbx.Text = "Show Password"
+        Admin_login_showPass_chkbx.UseVisualStyleBackColor = False
+        ' 
+        ' TextBox7
+        ' 
+        TextBox7.BackColor = Color.MidnightBlue
+        TextBox7.BorderStyle = BorderStyle.FixedSingle
+        TextBox7.ForeColor = Color.Turquoise
+        TextBox7.Location = New Point(193, 365)
+        TextBox7.Name = "TextBox7"
+        TextBox7.PasswordChar = "*"c
+        TextBox7.Size = New Size(178, 23)
+        TextBox7.TabIndex = 7
+        ' 
+        ' TextBox6
+        ' 
+        TextBox6.BackColor = Color.MidnightBlue
+        TextBox6.BorderStyle = BorderStyle.FixedSingle
+        TextBox6.ForeColor = Color.Turquoise
+        TextBox6.Location = New Point(595, 365)
+        TextBox6.Name = "TextBox6"
+        TextBox6.PasswordChar = "*"c
+        TextBox6.Size = New Size(178, 23)
+        TextBox6.TabIndex = 6
+        ' 
+        ' TextBox5
+        ' 
+        TextBox5.BackColor = Color.MidnightBlue
+        TextBox5.BorderStyle = BorderStyle.FixedSingle
+        TextBox5.ForeColor = Color.Turquoise
+        TextBox5.Location = New Point(207, 325)
+        TextBox5.Name = "TextBox5"
+        TextBox5.Size = New Size(178, 23)
+        TextBox5.TabIndex = 5
+        ' 
+        ' TextBox4
+        ' 
+        TextBox4.BackColor = Color.MidnightBlue
+        TextBox4.BorderStyle = BorderStyle.FixedSingle
+        TextBox4.ForeColor = Color.Turquoise
+        TextBox4.Location = New Point(180, 280)
+        TextBox4.Name = "TextBox4"
+        TextBox4.Size = New Size(350, 23)
+        TextBox4.TabIndex = 4
+        ' 
+        ' TextBox3
+        ' 
+        TextBox3.BackColor = Color.MidnightBlue
+        TextBox3.BorderStyle = BorderStyle.FixedSingle
+        TextBox3.ForeColor = Color.Turquoise
+        TextBox3.Location = New Point(206, 244)
+        TextBox3.Name = "TextBox3"
+        TextBox3.PlaceholderText = "+91"
+        TextBox3.Size = New Size(178, 23)
+        TextBox3.TabIndex = 3
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.BackColor = Color.MidnightBlue
+        TextBox2.BorderStyle = BorderStyle.FixedSingle
+        TextBox2.ForeColor = Color.Turquoise
+        TextBox2.Location = New Point(517, 200)
+        TextBox2.Name = "TextBox2"
+        TextBox2.PlaceholderText = "e.x. Das"
+        TextBox2.Size = New Size(181, 23)
+        TextBox2.TabIndex = 2
+        ' 
+        ' Admin_Fname_TBX
+        ' 
+        Admin_Fname_TBX.BackColor = Color.MidnightBlue
+        Admin_Fname_TBX.BorderStyle = BorderStyle.FixedSingle
+        Admin_Fname_TBX.ForeColor = Color.Turquoise
+        Admin_Fname_TBX.Location = New Point(207, 200)
+        Admin_Fname_TBX.Name = "Admin_Fname_TBX"
+        Admin_Fname_TBX.PlaceholderText = "e.x. Abir"
+        Admin_Fname_TBX.Size = New Size(178, 23)
+        Admin_Fname_TBX.TabIndex = 1
+        ' 
         ' Customer_Panel
         ' 
         Customer_Panel.BackgroundImage = My.Resources.Resources.Reg_Panel_Cust
         Customer_Panel.BackgroundImageLayout = ImageLayout.Stretch
         Customer_Panel.Controls.Add(BkIssue_panel)
-        Customer_Panel.Dock = DockStyle.Fill
-        Customer_Panel.Location = New Point(0, 0)
+        Customer_Panel.Location = New Point(0, 585)
         Customer_Panel.Name = "Customer_Panel"
-        Customer_Panel.Size = New Size(1106, 637)
+        Customer_Panel.Size = New Size(464, 52)
         Customer_Panel.TabIndex = 0
         ' 
         ' BkIssue_panel
@@ -340,7 +490,7 @@ Partial Class Dashboard
         ' Customer_btn
         ' 
         Customer_btn.BackColor = Color.White
-        Customer_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        Customer_btn.Font = New Font("Book Antiqua", 9F, FontStyle.Bold)
         Customer_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         Customer_btn.Location = New Point(93, 3)
         Customer_btn.Name = "Customer_btn"
@@ -352,7 +502,7 @@ Partial Class Dashboard
         ' Admin_btn
         ' 
         Admin_btn.BackColor = Color.White
-        Admin_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        Admin_btn.Font = New Font("Book Antiqua", 9F, FontStyle.Bold)
         Admin_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         Admin_btn.Location = New Point(12, 4)
         Admin_btn.Name = "Admin_btn"
@@ -380,7 +530,7 @@ Partial Class Dashboard
         ' Help_btn
         ' 
         Help_btn.BackColor = Color.White
-        Help_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        Help_btn.Font = New Font("Book Antiqua", 9F, FontStyle.Bold)
         Help_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         Help_btn.Location = New Point(367, 4)
         Help_btn.Name = "Help_btn"
@@ -392,7 +542,7 @@ Partial Class Dashboard
         ' Usr_btn
         ' 
         Usr_btn.BackColor = Color.White
-        Usr_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        Usr_btn.Font = New Font("Book Antiqua", 9F, FontStyle.Bold)
         Usr_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         Usr_btn.Location = New Point(286, 4)
         Usr_btn.Name = "Usr_btn"
@@ -404,7 +554,7 @@ Partial Class Dashboard
         ' Cust_btn
         ' 
         Cust_btn.BackColor = Color.White
-        Cust_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        Cust_btn.Font = New Font("Book Antiqua", 9F, FontStyle.Bold)
         Cust_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         Cust_btn.Location = New Point(205, 4)
         Cust_btn.Name = "Cust_btn"
@@ -416,7 +566,7 @@ Partial Class Dashboard
         ' BK_btn
         ' 
         BK_btn.BackColor = Color.White
-        BK_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        BK_btn.Font = New Font("Book Antiqua", 9F, FontStyle.Bold)
         BK_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         BK_btn.Location = New Point(124, 4)
         BK_btn.Name = "BK_btn"
@@ -428,7 +578,7 @@ Partial Class Dashboard
         ' Reg_btn
         ' 
         Reg_btn.BackColor = Color.White
-        Reg_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        Reg_btn.Font = New Font("Book Antiqua", 9F, FontStyle.Bold)
         Reg_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         Reg_btn.Location = New Point(43, 4)
         Reg_btn.Name = "Reg_btn"
@@ -439,7 +589,7 @@ Partial Class Dashboard
         ' 
         ' Dashboard
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1106, 697)
         Controls.Add(Main_panel)
@@ -456,6 +606,7 @@ Partial Class Dashboard
         Cust_Panel.ResumeLayout(False)
         Book_Panel.ResumeLayout(False)
         Admin_Panel.ResumeLayout(False)
+        Admin_Panel.PerformLayout()
         Customer_Panel.ResumeLayout(False)
         BkIssue_panel.ResumeLayout(False)
         BkSearch_Panel.ResumeLayout(False)
@@ -505,4 +656,13 @@ Partial Class Dashboard
     Friend WithEvents BKIssue_btn As Button
     Friend WithEvents BKReturn_btn As Button
     Friend WithEvents BKSearch_btn As Button
+    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Admin_Fname_TBX As TextBox
+    Friend WithEvents Admin_login_showPass_chkbx As CheckBox
+    Friend WithEvents Label1 As Label
 End Class
