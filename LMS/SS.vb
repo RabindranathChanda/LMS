@@ -34,11 +34,9 @@
             Label3.Text = j
         ElseIf (ProgressBar1.Value < 96) Then
             Login.Show()
+        ElseIf (ProgressBar1.Value >= 98) Then
+            Timer1.Enabled = False
         Else
-            Me.Hide()
-            If (ProgressBar1.Value >= 98) Then
-                ProgressBar1.Value = 0
-            End If
 
         End If
 

@@ -22,3 +22,27 @@ D:\Visual Studio Projects\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.pdb
 D:\Visual Studio Projects\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.genruntimeconfig.cache
 D:\Visual Studio Projects\LMS\LMS\obj\x64\Debug\net8.0-windows\ref\LMS.dll
 D:\Visual Studio Projects\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.Dashboard.resources
+D:\Rabindranath Chanda\LMS\LMS\LMS\bin\x64\Debug\net8.0-windows\LMS.exe
+D:\Rabindranath Chanda\LMS\LMS\LMS\bin\x64\Debug\net8.0-windows\LMS.deps.json
+D:\Rabindranath Chanda\LMS\LMS\LMS\bin\x64\Debug\net8.0-windows\LMS.runtimeconfig.json
+D:\Rabindranath Chanda\LMS\LMS\LMS\bin\x64\Debug\net8.0-windows\LMS.dll
+D:\Rabindranath Chanda\LMS\LMS\LMS\bin\x64\Debug\net8.0-windows\LMS.pdb
+D:\Rabindranath Chanda\LMS\LMS\LMS\bin\x64\Debug\net8.0-windows\System.Data.OleDb.dll
+D:\Rabindranath Chanda\LMS\LMS\LMS\bin\x64\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.OleDb.dll
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.vbproj.AssemblyReference.cache
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.Dashboard.resources
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.Login.resources
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.Resources.resources
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.RegUsr.resources
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.SS.resources
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.vbproj.GenerateResource.cache
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.AssemblyInfoInputs.cache
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.AssemblyInfo.vb
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.vbproj.CoreCompileInputs.cache
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.vbproj.CopyComplete
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.dll
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\refint\LMS.dll
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.pdb
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\LMS.genruntimeconfig.cache
+D:\Rabindranath Chanda\LMS\LMS\LMS\obj\x64\Debug\net8.0-windows\ref\LMS.dll

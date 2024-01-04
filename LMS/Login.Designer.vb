@@ -23,16 +23,15 @@ Partial Class Login
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Label4 = New Label()
-        uname = New TextBox()
-        pass = New TextBox()
-        Label1 = New Label()
+        Login_UName_TBX = New TextBox()
+        Login_Pass_TBX = New TextBox()
         Label2 = New Label()
         Label3 = New Label()
-        utype = New ComboBox()
         login_btn = New Button()
         cancel_btn = New Button()
         PictureBox1 = New PictureBox()
         Label5 = New Label()
+        Login_ShowPass_ChkBx = New CheckBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -48,44 +47,34 @@ Partial Class Login
         Label4.TabIndex = 7
         Label4.Text = "LOGIN"
         ' 
-        ' uname
+        ' Login_UName_TBX
         ' 
-        uname.Font = New Font("Bookman Old Style", 9F)
-        uname.Location = New Point(659, 245)
-        uname.Multiline = True
-        uname.Name = "uname"
-        uname.Size = New Size(173, 23)
-        uname.TabIndex = 1
+        Login_UName_TBX.Font = New Font("Bookman Old Style", 9F)
+        Login_UName_TBX.Location = New Point(543, 216)
+        Login_UName_TBX.Multiline = True
+        Login_UName_TBX.Name = "Login_UName_TBX"
+        Login_UName_TBX.PlaceholderText = "e.x.  admin@lms.in"
+        Login_UName_TBX.Size = New Size(269, 23)
+        Login_UName_TBX.TabIndex = 1
         ' 
-        ' pass
+        ' Login_Pass_TBX
         ' 
-        pass.Font = New Font("Bookman Old Style", 9F)
-        pass.Location = New Point(659, 288)
-        pass.Multiline = True
-        pass.Name = "pass"
-        pass.PlaceholderText = "Enter Password"
-        pass.Size = New Size(173, 23)
-        pass.TabIndex = 2
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Bookman Old Style", 14.25F, FontStyle.Bold)
-        Label1.ForeColor = Color.Magenta
-        Label1.Location = New Point(538, 203)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(107, 22)
-        Label1.TabIndex = 3
-        Label1.Text = "User Type"
+        Login_Pass_TBX.Font = New Font("Bookman Old Style", 9F)
+        Login_Pass_TBX.Location = New Point(543, 289)
+        Login_Pass_TBX.Multiline = True
+        Login_Pass_TBX.Name = "Login_Pass_TBX"
+        Login_Pass_TBX.PasswordChar = "*"c
+        Login_Pass_TBX.PlaceholderText = "Enter Password"
+        Login_Pass_TBX.Size = New Size(269, 23)
+        Login_Pass_TBX.TabIndex = 2
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.BackColor = Color.Transparent
+        Label2.BackColor = Color.Silver
         Label2.Font = New Font("Bookman Old Style", 14.25F, FontStyle.Bold)
         Label2.ForeColor = Color.Magenta
-        Label2.Location = New Point(538, 244)
+        Label2.Location = New Point(543, 189)
         Label2.Name = "Label2"
         Label2.Size = New Size(115, 22)
         Label2.TabIndex = 4
@@ -94,27 +83,19 @@ Partial Class Login
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.BackColor = Color.Transparent
+        Label3.BackColor = Color.Silver
         Label3.Font = New Font("Bookman Old Style", 14.25F, FontStyle.Bold)
         Label3.ForeColor = Color.Magenta
-        Label3.Location = New Point(538, 287)
+        Label3.Location = New Point(543, 262)
         Label3.Name = "Label3"
         Label3.Size = New Size(103, 22)
         Label3.TabIndex = 5
         Label3.Text = "Password"
         ' 
-        ' utype
-        ' 
-        utype.FormattingEnabled = True
-        utype.Items.AddRange(New Object() {"Admin", "Student"})
-        utype.Location = New Point(659, 203)
-        utype.Name = "utype"
-        utype.Size = New Size(173, 23)
-        utype.TabIndex = 6
-        ' 
         ' login_btn
         ' 
         login_btn.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        login_btn.Cursor = Cursors.Hand
         login_btn.Font = New Font("Bookman Old Style", 14.25F, FontStyle.Bold)
         login_btn.ForeColor = Color.Magenta
         login_btn.Location = New Point(577, 352)
@@ -127,6 +108,7 @@ Partial Class Login
         ' cancel_btn
         ' 
         cancel_btn.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        cancel_btn.Cursor = Cursors.Hand
         cancel_btn.Font = New Font("Bookman Old Style", 14.25F, FontStyle.Bold)
         cancel_btn.ForeColor = Color.Magenta
         cancel_btn.Location = New Point(703, 352)
@@ -159,21 +141,32 @@ Partial Class Login
         Label5.TabIndex = 14
         Label5.Text = "New User ? Click hare to Register."
         ' 
+        ' Login_ShowPass_ChkBx
+        ' 
+        Login_ShowPass_ChkBx.AutoSize = True
+        Login_ShowPass_ChkBx.Font = New Font("Book Antiqua", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Login_ShowPass_ChkBx.ForeColor = Color.Indigo
+        Login_ShowPass_ChkBx.Location = New Point(543, 318)
+        Login_ShowPass_ChkBx.Name = "Login_ShowPass_ChkBx"
+        Login_ShowPass_ChkBx.Size = New Size(113, 21)
+        Login_ShowPass_ChkBx.TabIndex = 15
+        Login_ShowPass_ChkBx.Text = "Show Password"
+        Login_ShowPass_ChkBx.UseVisualStyleBackColor = True
+        ' 
         ' Login
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(871, 529)
+        Controls.Add(Login_ShowPass_ChkBx)
         Controls.Add(Label5)
-        Controls.Add(utype)
         Controls.Add(Label3)
         Controls.Add(cancel_btn)
         Controls.Add(Label2)
         Controls.Add(login_btn)
-        Controls.Add(Label1)
-        Controls.Add(pass)
+        Controls.Add(Login_Pass_TBX)
         Controls.Add(Label4)
-        Controls.Add(uname)
+        Controls.Add(Login_UName_TBX)
         Controls.Add(PictureBox1)
         FormBorderStyle = FormBorderStyle.None
         Name = "Login"
@@ -184,15 +177,14 @@ Partial Class Login
         PerformLayout()
     End Sub
     Friend WithEvents Label4 As Label
-    Friend WithEvents uname As TextBox
-    Friend WithEvents pass As TextBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Login_UName_TBX As TextBox
+    Friend WithEvents Login_Pass_TBX As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents utype As ComboBox
     Friend WithEvents login_btn As Button
     Friend WithEvents cancel_btn As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents Login_ShowPass_ChkBx As CheckBox
 
 End Class

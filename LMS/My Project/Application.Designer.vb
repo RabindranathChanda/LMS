@@ -33,7 +33,7 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.LMS.Dashboard
+            Me.MainForm = Global.LMS.SS
         End Sub
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>
