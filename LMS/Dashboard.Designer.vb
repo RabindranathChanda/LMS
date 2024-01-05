@@ -31,10 +31,10 @@ Partial Class Dashboard
         User_Panel = New Panel()
         AllUsr_btn = New Button()
         Profile_btn = New Button()
-        Book_Panel = New Panel()
         Cust_Panel = New Panel()
-        BKReturn_btn = New Button()
         CustSearch_btn = New Button()
+        BKReturn_btn = New Button()
+        Book_Panel = New Panel()
         BKSearch_btn = New Button()
         BKIssue_btn = New Button()
         AddBK_btn = New Button()
@@ -43,11 +43,51 @@ Partial Class Dashboard
         Admin_Panel = New Panel()
         BkIssue_panel = New Panel()
         BkSearch_Panel = New Panel()
+        BkReturn_Panel = New Panel()
         SearchCustomer_Panel = New Panel()
         CurrentProfile_Panel = New Panel()
         AllUsers_Panel = New Panel()
         Credits_Panel = New Panel()
-        BkReturn_Panel = New Panel()
+        Button3 = New Button()
+        Button2 = New Button()
+        DataGridView3 = New DataGridView()
+        CurrentProfile_CPass_TBX = New TextBox()
+        CurrentProfile_Pass_TBX = New TextBox()
+        Button1 = New Button()
+        Label7 = New Label()
+        Label6 = New Label()
+        Label5 = New Label()
+        Label4 = New Label()
+        Label3 = New Label()
+        CurrentProfile_Close_btn = New Button()
+        SearchCust_Search_btn = New Button()
+        SearchCust_CustPhone_TBX = New TextBox()
+        SearchCust_CustName_TBX = New TextBox()
+        DataGridView2 = New DataGridView()
+        ReturnBK_Close_btn = New Button()
+        ReturnBK_Return_btn = New Button()
+        ReturnBK_Search_btn = New Button()
+        Panel1 = New Panel()
+        ReturnBK_ReturnDate_TBX = New TextBox()
+        ReturnBK_IssueDate_TBX = New TextBox()
+        ReturnBK_BKID_TBX = New TextBox()
+        ReturnBK_BKName_TBX = New TextBox()
+        ReturnBK_CustName_TBX = New TextBox()
+        ReturnBK_Phone_TBX = New TextBox()
+        BKSearch_Close_btn = New Button()
+        BKSearch_Search_btn = New Button()
+        BKSearch_BKID_TBX = New TextBox()
+        BKSearch_BKName_TBX = New TextBox()
+        DataGridView1 = New DataGridView()
+        BKIssue_Close_btn = New Button()
+        BKIssue_Reset_btn = New Button()
+        BKIssue_Issue_btn = New Button()
+        BKIssue_ReturnBKDate_TBX = New DateTimePicker()
+        BKIssue_IssueDate_TBX = New DateTimePicker()
+        BKIssue_Phone_TBX = New TextBox()
+        BKIssue_CustName_TBX = New TextBox()
+        BKIssue_BKID_TBX = New TextBox()
+        BKIssu_BKName_TBX = New TextBox()
         Add_BK_Panel = New Panel()
         AddBK_Close_btn = New Button()
         AddBK_Submit_btn = New Button()
@@ -82,16 +122,20 @@ Partial Class Dashboard
         Main_panel.SuspendLayout()
         Help_Panel.SuspendLayout()
         User_Panel.SuspendLayout()
-        Book_Panel.SuspendLayout()
         Cust_Panel.SuspendLayout()
+        Book_Panel.SuspendLayout()
         Reg_panel.SuspendLayout()
         Admin_Panel.SuspendLayout()
         BkIssue_panel.SuspendLayout()
         BkSearch_Panel.SuspendLayout()
+        BkReturn_Panel.SuspendLayout()
         SearchCustomer_Panel.SuspendLayout()
         CurrentProfile_Panel.SuspendLayout()
         AllUsers_Panel.SuspendLayout()
         Credits_Panel.SuspendLayout()
+        CType(DataGridView3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         Add_BK_Panel.SuspendLayout()
         Menu.SuspendLayout()
         SuspendLayout()
@@ -123,6 +167,7 @@ Partial Class Dashboard
         Main_panel.BackgroundImageLayout = ImageLayout.Stretch
         Main_panel.Controls.Add(Help_Panel)
         Main_panel.Controls.Add(User_Panel)
+        Main_panel.Controls.Add(Cust_Panel)
         Main_panel.Controls.Add(Book_Panel)
         Main_panel.Controls.Add(Reg_panel)
         Main_panel.Controls.Add(Admin_Panel)
@@ -137,7 +182,7 @@ Partial Class Dashboard
         ' 
         Help_Panel.BackColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         Help_Panel.Controls.Add(Creds_btn)
-        Help_Panel.Location = New Point(1, 31)
+        Help_Panel.Location = New Point(0, 30)
         Help_Panel.Name = "Help_Panel"
         Help_Panel.Size = New Size(1106, 30)
         Help_Panel.TabIndex = 7
@@ -159,7 +204,7 @@ Partial Class Dashboard
         User_Panel.BackColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
         User_Panel.Controls.Add(AllUsr_btn)
         User_Panel.Controls.Add(Profile_btn)
-        User_Panel.Location = New Point(1, 31)
+        User_Panel.Location = New Point(1, 29)
         User_Panel.Name = "User_Panel"
         User_Panel.Size = New Size(1106, 30)
         User_Panel.TabIndex = 6
@@ -188,10 +233,43 @@ Partial Class Dashboard
         Profile_btn.Text = "Profile"
         Profile_btn.UseVisualStyleBackColor = False
         ' 
+        ' Cust_Panel
+        ' 
+        Cust_Panel.BackColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        Cust_Panel.Controls.Add(CustSearch_btn)
+        Cust_Panel.Controls.Add(BKReturn_btn)
+        Cust_Panel.Location = New Point(1, 29)
+        Cust_Panel.Name = "Cust_Panel"
+        Cust_Panel.Size = New Size(1106, 31)
+        Cust_Panel.TabIndex = 8
+        ' 
+        ' CustSearch_btn
+        ' 
+        CustSearch_btn.BackColor = Color.White
+        CustSearch_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        CustSearch_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        CustSearch_btn.Location = New Point(112, 3)
+        CustSearch_btn.Name = "CustSearch_btn"
+        CustSearch_btn.Size = New Size(75, 23)
+        CustSearch_btn.TabIndex = 1
+        CustSearch_btn.Text = "Search Customer"
+        CustSearch_btn.UseVisualStyleBackColor = False
+        ' 
+        ' BKReturn_btn
+        ' 
+        BKReturn_btn.BackColor = Color.White
+        BKReturn_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
+        BKReturn_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
+        BKReturn_btn.Location = New Point(11, 3)
+        BKReturn_btn.Name = "BKReturn_btn"
+        BKReturn_btn.Size = New Size(92, 23)
+        BKReturn_btn.TabIndex = 0
+        BKReturn_btn.Text = "Return Books"
+        BKReturn_btn.UseVisualStyleBackColor = False
+        ' 
         ' Book_Panel
         ' 
         Book_Panel.BackColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
-        Book_Panel.Controls.Add(Cust_Panel)
         Book_Panel.Controls.Add(BKSearch_btn)
         Book_Panel.Controls.Add(BKIssue_btn)
         Book_Panel.Controls.Add(AddBK_btn)
@@ -199,40 +277,6 @@ Partial Class Dashboard
         Book_Panel.Name = "Book_Panel"
         Book_Panel.Size = New Size(1106, 30)
         Book_Panel.TabIndex = 4
-        ' 
-        ' Cust_Panel
-        ' 
-        Cust_Panel.BackColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
-        Cust_Panel.Controls.Add(BKReturn_btn)
-        Cust_Panel.Controls.Add(CustSearch_btn)
-        Cust_Panel.Location = New Point(2, -1)
-        Cust_Panel.Name = "Cust_Panel"
-        Cust_Panel.Size = New Size(1106, 30)
-        Cust_Panel.TabIndex = 5
-        ' 
-        ' BKReturn_btn
-        ' 
-        BKReturn_btn.BackColor = Color.White
-        BKReturn_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
-        BKReturn_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
-        BKReturn_btn.Location = New Point(11, 4)
-        BKReturn_btn.Name = "BKReturn_btn"
-        BKReturn_btn.Size = New Size(86, 23)
-        BKReturn_btn.TabIndex = 1
-        BKReturn_btn.Text = "Return Book"
-        BKReturn_btn.UseVisualStyleBackColor = False
-        ' 
-        ' CustSearch_btn
-        ' 
-        CustSearch_btn.BackColor = Color.White
-        CustSearch_btn.Font = New Font("Book Antiqua", 9.0F, FontStyle.Bold)
-        CustSearch_btn.ForeColor = Color.FromArgb(CByte(91), CByte(2), CByte(156))
-        CustSearch_btn.Location = New Point(103, 4)
-        CustSearch_btn.Name = "CustSearch_btn"
-        CustSearch_btn.Size = New Size(115, 23)
-        CustSearch_btn.TabIndex = 0
-        CustSearch_btn.Text = "Search Customer"
-        CustSearch_btn.UseVisualStyleBackColor = False
         ' 
         ' BKSearch_btn
         ' 
@@ -308,65 +352,547 @@ Partial Class Dashboard
         Admin_Panel.Controls.Add(Admin_Reset_btn)
         Admin_Panel.Controls.Add(Admin_Submit_btn)
         Admin_Panel.Controls.Add(Admin_login_showPass_chkbx)
-        Admin_Panel.Location = New Point(0, 56)
+        Admin_Panel.Location = New Point(0, 61)
         Admin_Panel.Name = "Admin_Panel"
-        Admin_Panel.Size = New Size(1108, 642)
+        Admin_Panel.Size = New Size(1107, 637)
         Admin_Panel.TabIndex = 1
         ' 
         ' BkIssue_panel
         ' 
+        BkIssue_panel.BackgroundImage = My.Resources.Resources.Issue_Book
+        BkIssue_panel.BackgroundImageLayout = ImageLayout.Stretch
         BkIssue_panel.Controls.Add(BkSearch_Panel)
-        BkIssue_panel.Location = New Point(0, 597)
+        BkIssue_panel.Controls.Add(BKIssue_Close_btn)
+        BkIssue_panel.Controls.Add(BKIssue_Reset_btn)
+        BkIssue_panel.Controls.Add(BKIssue_Issue_btn)
+        BkIssue_panel.Controls.Add(BKIssue_ReturnBKDate_TBX)
+        BkIssue_panel.Controls.Add(BKIssue_IssueDate_TBX)
+        BkIssue_panel.Controls.Add(BKIssue_Phone_TBX)
+        BkIssue_panel.Controls.Add(BKIssue_CustName_TBX)
+        BkIssue_panel.Controls.Add(BKIssue_BKID_TBX)
+        BkIssue_panel.Controls.Add(BKIssu_BKName_TBX)
+        BkIssue_panel.Dock = DockStyle.Fill
+        BkIssue_panel.Location = New Point(0, 0)
         BkIssue_panel.Name = "BkIssue_panel"
-        BkIssue_panel.Size = New Size(616, 40)
+        BkIssue_panel.Size = New Size(1107, 637)
         BkIssue_panel.TabIndex = 0
         ' 
         ' BkSearch_Panel
         ' 
-        BkSearch_Panel.Controls.Add(SearchCustomer_Panel)
-        BkSearch_Panel.Location = New Point(0, 591)
+        BkSearch_Panel.BackgroundImage = My.Resources.Resources.Search_Book
+        BkSearch_Panel.BackgroundImageLayout = ImageLayout.Stretch
+        BkSearch_Panel.Controls.Add(BkReturn_Panel)
+        BkSearch_Panel.Controls.Add(BKSearch_Close_btn)
+        BkSearch_Panel.Controls.Add(BKSearch_Search_btn)
+        BkSearch_Panel.Controls.Add(BKSearch_BKID_TBX)
+        BkSearch_Panel.Controls.Add(BKSearch_BKName_TBX)
+        BkSearch_Panel.Controls.Add(DataGridView1)
+        BkSearch_Panel.Dock = DockStyle.Fill
+        BkSearch_Panel.Location = New Point(0, 0)
         BkSearch_Panel.Name = "BkSearch_Panel"
-        BkSearch_Panel.Size = New Size(773, 35)
+        BkSearch_Panel.Size = New Size(1107, 637)
         BkSearch_Panel.TabIndex = 0
+        ' 
+        ' BkReturn_Panel
+        ' 
+        BkReturn_Panel.BackgroundImage = My.Resources.Resources.Return_Book
+        BkReturn_Panel.BackgroundImageLayout = ImageLayout.Stretch
+        BkReturn_Panel.Controls.Add(SearchCustomer_Panel)
+        BkReturn_Panel.Controls.Add(ReturnBK_Close_btn)
+        BkReturn_Panel.Controls.Add(ReturnBK_Return_btn)
+        BkReturn_Panel.Controls.Add(ReturnBK_Search_btn)
+        BkReturn_Panel.Controls.Add(Panel1)
+        BkReturn_Panel.Controls.Add(ReturnBK_ReturnDate_TBX)
+        BkReturn_Panel.Controls.Add(ReturnBK_IssueDate_TBX)
+        BkReturn_Panel.Controls.Add(ReturnBK_BKID_TBX)
+        BkReturn_Panel.Controls.Add(ReturnBK_BKName_TBX)
+        BkReturn_Panel.Controls.Add(ReturnBK_CustName_TBX)
+        BkReturn_Panel.Controls.Add(ReturnBK_Phone_TBX)
+        BkReturn_Panel.Dock = DockStyle.Fill
+        BkReturn_Panel.Location = New Point(0, 0)
+        BkReturn_Panel.Name = "BkReturn_Panel"
+        BkReturn_Panel.Size = New Size(1107, 637)
+        BkReturn_Panel.TabIndex = 0
         ' 
         ' SearchCustomer_Panel
         ' 
+        SearchCustomer_Panel.BackgroundImage = My.Resources.Resources.Search_Customer
+        SearchCustomer_Panel.BackgroundImageLayout = ImageLayout.Stretch
         SearchCustomer_Panel.Controls.Add(CurrentProfile_Panel)
-        SearchCustomer_Panel.Location = New Point(0, 168)
+        SearchCustomer_Panel.Controls.Add(SearchCust_Search_btn)
+        SearchCustomer_Panel.Controls.Add(SearchCust_CustPhone_TBX)
+        SearchCustomer_Panel.Controls.Add(SearchCust_CustName_TBX)
+        SearchCustomer_Panel.Controls.Add(DataGridView2)
+        SearchCustomer_Panel.Dock = DockStyle.Fill
+        SearchCustomer_Panel.Location = New Point(0, 0)
         SearchCustomer_Panel.Name = "SearchCustomer_Panel"
-        SearchCustomer_Panel.Size = New Size(977, 458)
+        SearchCustomer_Panel.Size = New Size(1107, 637)
         SearchCustomer_Panel.TabIndex = 0
         ' 
         ' CurrentProfile_Panel
         ' 
+        CurrentProfile_Panel.BackgroundImage = My.Resources.Resources.Current_Profile
+        CurrentProfile_Panel.BackgroundImageLayout = ImageLayout.Stretch
         CurrentProfile_Panel.Controls.Add(AllUsers_Panel)
-        CurrentProfile_Panel.Location = New Point(0, 209)
+        CurrentProfile_Panel.Controls.Add(CurrentProfile_CPass_TBX)
+        CurrentProfile_Panel.Controls.Add(CurrentProfile_Pass_TBX)
+        CurrentProfile_Panel.Controls.Add(Button1)
+        CurrentProfile_Panel.Controls.Add(Label7)
+        CurrentProfile_Panel.Controls.Add(Label6)
+        CurrentProfile_Panel.Controls.Add(Label5)
+        CurrentProfile_Panel.Controls.Add(Label4)
+        CurrentProfile_Panel.Controls.Add(Label3)
+        CurrentProfile_Panel.Controls.Add(CurrentProfile_Close_btn)
+        CurrentProfile_Panel.Dock = DockStyle.Fill
+        CurrentProfile_Panel.Location = New Point(0, 0)
         CurrentProfile_Panel.Name = "CurrentProfile_Panel"
-        CurrentProfile_Panel.Size = New Size(978, 417)
+        CurrentProfile_Panel.Size = New Size(1107, 637)
         CurrentProfile_Panel.TabIndex = 0
         ' 
         ' AllUsers_Panel
         ' 
+        AllUsers_Panel.BackgroundImage = My.Resources.Resources.All_Users
+        AllUsers_Panel.BackgroundImageLayout = ImageLayout.Stretch
         AllUsers_Panel.Controls.Add(Credits_Panel)
-        AllUsers_Panel.Location = New Point(0, 58)
+        AllUsers_Panel.Controls.Add(Button2)
+        AllUsers_Panel.Controls.Add(DataGridView3)
+        AllUsers_Panel.Dock = DockStyle.Fill
+        AllUsers_Panel.Location = New Point(0, 0)
         AllUsers_Panel.Name = "AllUsers_Panel"
-        AllUsers_Panel.Size = New Size(1036, 568)
+        AllUsers_Panel.Size = New Size(1107, 637)
         AllUsers_Panel.TabIndex = 0
         ' 
         ' Credits_Panel
         ' 
-        Credits_Panel.Controls.Add(BkReturn_Panel)
-        Credits_Panel.Location = New Point(0, 193)
+        Credits_Panel.BackgroundImage = My.Resources.Resources.Credits
+        Credits_Panel.BackgroundImageLayout = ImageLayout.Stretch
+        Credits_Panel.Controls.Add(Button3)
+        Credits_Panel.Dock = DockStyle.Fill
+        Credits_Panel.Location = New Point(0, 0)
         Credits_Panel.Name = "Credits_Panel"
-        Credits_Panel.Size = New Size(838, 433)
+        Credits_Panel.Size = New Size(1107, 637)
         Credits_Panel.TabIndex = 0
         ' 
-        ' BkReturn_Panel
+        ' Button3
         ' 
-        BkReturn_Panel.Location = New Point(0, 17)
-        BkReturn_Panel.Name = "BkReturn_Panel"
-        BkReturn_Panel.Size = New Size(819, 609)
-        BkReturn_Panel.TabIndex = 0
+        Button3.Font = New Font("Book Antiqua", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button3.ForeColor = Color.Indigo
+        Button3.Location = New Point(458, 570)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(115, 35)
+        Button3.TabIndex = 3
+        Button3.Text = "Close"
+        Button3.UseVisualStyleBackColor = True
+        ' 
+        ' Button2
+        ' 
+        Button2.Font = New Font("Book Antiqua", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button2.ForeColor = Color.Indigo
+        Button2.Location = New Point(505, 589)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(115, 35)
+        Button2.TabIndex = 2
+        Button2.Text = "Close"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' DataGridView3
+        ' 
+        DataGridView3.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        DataGridView3.BackgroundColor = Color.MidnightBlue
+        DataGridView3.BorderStyle = BorderStyle.None
+        DataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView3.Location = New Point(15, 134)
+        DataGridView3.Name = "DataGridView3"
+        DataGridView3.Size = New Size(1079, 445)
+        DataGridView3.TabIndex = 1
+        ' 
+        ' CurrentProfile_CPass_TBX
+        ' 
+        CurrentProfile_CPass_TBX.BackColor = Color.MidnightBlue
+        CurrentProfile_CPass_TBX.BorderStyle = BorderStyle.None
+        CurrentProfile_CPass_TBX.ForeColor = Color.White
+        CurrentProfile_CPass_TBX.Location = New Point(598, 370)
+        CurrentProfile_CPass_TBX.Name = "CurrentProfile_CPass_TBX"
+        CurrentProfile_CPass_TBX.Size = New Size(175, 16)
+        CurrentProfile_CPass_TBX.TabIndex = 11
+        ' 
+        ' CurrentProfile_Pass_TBX
+        ' 
+        CurrentProfile_Pass_TBX.BackColor = Color.MidnightBlue
+        CurrentProfile_Pass_TBX.BorderStyle = BorderStyle.None
+        CurrentProfile_Pass_TBX.ForeColor = Color.White
+        CurrentProfile_Pass_TBX.Location = New Point(196, 371)
+        CurrentProfile_Pass_TBX.Name = "CurrentProfile_Pass_TBX"
+        CurrentProfile_Pass_TBX.Size = New Size(175, 16)
+        CurrentProfile_Pass_TBX.TabIndex = 10
+        ' 
+        ' Button1
+        ' 
+        Button1.Font = New Font("Book Antiqua", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.ForeColor = Color.Indigo
+        Button1.Location = New Point(157, 508)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(173, 35)
+        Button1.TabIndex = 9
+        Button1.Text = "Update Password"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.BackColor = Color.MidnightBlue
+        Label7.ForeColor = Color.White
+        Label7.Location = New Point(207, 331)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(41, 15)
+        Label7.TabIndex = 6
+        Label7.Text = "Label7"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.BackColor = Color.MidnightBlue
+        Label6.ForeColor = Color.White
+        Label6.Location = New Point(179, 287)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(41, 15)
+        Label6.TabIndex = 5
+        Label6.Text = "Label6"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.BackColor = Color.MidnightBlue
+        Label5.ForeColor = Color.White
+        Label5.Location = New Point(205, 251)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(41, 15)
+        Label5.TabIndex = 4
+        Label5.Text = "Label5"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.BackColor = Color.MidnightBlue
+        Label4.ForeColor = Color.White
+        Label4.Location = New Point(518, 207)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(41, 15)
+        Label4.TabIndex = 3
+        Label4.Text = "Label4"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.BackColor = Color.MidnightBlue
+        Label3.ForeColor = Color.White
+        Label3.Location = New Point(207, 207)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(41, 15)
+        Label3.TabIndex = 2
+        Label3.Text = "Label3"
+        ' 
+        ' CurrentProfile_Close_btn
+        ' 
+        CurrentProfile_Close_btn.Font = New Font("Book Antiqua", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        CurrentProfile_Close_btn.ForeColor = Color.Indigo
+        CurrentProfile_Close_btn.Location = New Point(534, 508)
+        CurrentProfile_Close_btn.Name = "CurrentProfile_Close_btn"
+        CurrentProfile_Close_btn.Size = New Size(115, 35)
+        CurrentProfile_Close_btn.TabIndex = 1
+        CurrentProfile_Close_btn.Text = "Close"
+        CurrentProfile_Close_btn.UseVisualStyleBackColor = True
+        ' 
+        ' SearchCust_Search_btn
+        ' 
+        SearchCust_Search_btn.Font = New Font("Book Antiqua", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        SearchCust_Search_btn.ForeColor = Color.Indigo
+        SearchCust_Search_btn.Location = New Point(558, 202)
+        SearchCust_Search_btn.Name = "SearchCust_Search_btn"
+        SearchCust_Search_btn.Size = New Size(115, 35)
+        SearchCust_Search_btn.TabIndex = 4
+        SearchCust_Search_btn.Text = "Search"
+        SearchCust_Search_btn.UseVisualStyleBackColor = True
+        ' 
+        ' SearchCust_CustPhone_TBX
+        ' 
+        SearchCust_CustPhone_TBX.BackColor = Color.MidnightBlue
+        SearchCust_CustPhone_TBX.BorderStyle = BorderStyle.None
+        SearchCust_CustPhone_TBX.ForeColor = Color.White
+        SearchCust_CustPhone_TBX.Location = New Point(236, 214)
+        SearchCust_CustPhone_TBX.Name = "SearchCust_CustPhone_TBX"
+        SearchCust_CustPhone_TBX.Size = New Size(180, 16)
+        SearchCust_CustPhone_TBX.TabIndex = 3
+        ' 
+        ' SearchCust_CustName_TBX
+        ' 
+        SearchCust_CustName_TBX.BackColor = Color.MidnightBlue
+        SearchCust_CustName_TBX.BorderStyle = BorderStyle.None
+        SearchCust_CustName_TBX.ForeColor = Color.White
+        SearchCust_CustName_TBX.Location = New Point(290, 150)
+        SearchCust_CustName_TBX.Name = "SearchCust_CustName_TBX"
+        SearchCust_CustName_TBX.Size = New Size(178, 16)
+        SearchCust_CustName_TBX.TabIndex = 2
+        ' 
+        ' DataGridView2
+        ' 
+        DataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        DataGridView2.BackgroundColor = Color.MidnightBlue
+        DataGridView2.BorderStyle = BorderStyle.None
+        DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView2.Location = New Point(15, 307)
+        DataGridView2.Name = "DataGridView2"
+        DataGridView2.Size = New Size(1077, 298)
+        DataGridView2.TabIndex = 1
+        ' 
+        ' ReturnBK_Close_btn
+        ' 
+        ReturnBK_Close_btn.Font = New Font("Book Antiqua", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        ReturnBK_Close_btn.ForeColor = Color.Indigo
+        ReturnBK_Close_btn.Location = New Point(590, 498)
+        ReturnBK_Close_btn.Name = "ReturnBK_Close_btn"
+        ReturnBK_Close_btn.Size = New Size(115, 35)
+        ReturnBK_Close_btn.TabIndex = 10
+        ReturnBK_Close_btn.Text = "Close"
+        ReturnBK_Close_btn.UseVisualStyleBackColor = True
+        ' 
+        ' ReturnBK_Return_btn
+        ' 
+        ReturnBK_Return_btn.Font = New Font("Book Antiqua", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        ReturnBK_Return_btn.ForeColor = Color.Indigo
+        ReturnBK_Return_btn.Location = New Point(364, 498)
+        ReturnBK_Return_btn.Name = "ReturnBK_Return_btn"
+        ReturnBK_Return_btn.Size = New Size(115, 35)
+        ReturnBK_Return_btn.TabIndex = 9
+        ReturnBK_Return_btn.Text = "Return"
+        ReturnBK_Return_btn.UseVisualStyleBackColor = True
+        ' 
+        ' ReturnBK_Search_btn
+        ' 
+        ReturnBK_Search_btn.Font = New Font("Book Antiqua", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        ReturnBK_Search_btn.ForeColor = Color.Indigo
+        ReturnBK_Search_btn.Location = New Point(126, 498)
+        ReturnBK_Search_btn.Name = "ReturnBK_Search_btn"
+        ReturnBK_Search_btn.Size = New Size(115, 35)
+        ReturnBK_Search_btn.TabIndex = 8
+        ReturnBK_Search_btn.Text = "Search"
+        ReturnBK_Search_btn.UseVisualStyleBackColor = True
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.MidnightBlue
+        Panel1.Location = New Point(78, 372)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(411, 27)
+        Panel1.TabIndex = 7
+        ' 
+        ' ReturnBK_ReturnDate_TBX
+        ' 
+        ReturnBK_ReturnDate_TBX.BackColor = Color.MidnightBlue
+        ReturnBK_ReturnDate_TBX.BorderStyle = BorderStyle.None
+        ReturnBK_ReturnDate_TBX.ForeColor = Color.White
+        ReturnBK_ReturnDate_TBX.Location = New Point(247, 331)
+        ReturnBK_ReturnDate_TBX.Name = "ReturnBK_ReturnDate_TBX"
+        ReturnBK_ReturnDate_TBX.Size = New Size(178, 16)
+        ReturnBK_ReturnDate_TBX.TabIndex = 6
+        ' 
+        ' ReturnBK_IssueDate_TBX
+        ' 
+        ReturnBK_IssueDate_TBX.BackColor = Color.MidnightBlue
+        ReturnBK_IssueDate_TBX.BorderStyle = BorderStyle.None
+        ReturnBK_IssueDate_TBX.ForeColor = Color.White
+        ReturnBK_IssueDate_TBX.Location = New Point(231, 286)
+        ReturnBK_IssueDate_TBX.Name = "ReturnBK_IssueDate_TBX"
+        ReturnBK_IssueDate_TBX.Size = New Size(211, 16)
+        ReturnBK_IssueDate_TBX.TabIndex = 5
+        ' 
+        ' ReturnBK_BKID_TBX
+        ' 
+        ReturnBK_BKID_TBX.BackColor = Color.MidnightBlue
+        ReturnBK_BKID_TBX.BorderStyle = BorderStyle.None
+        ReturnBK_BKID_TBX.ForeColor = Color.White
+        ReturnBK_BKID_TBX.Location = New Point(495, 237)
+        ReturnBK_BKID_TBX.Name = "ReturnBK_BKID_TBX"
+        ReturnBK_BKID_TBX.PlaceholderText = "Mandatory for Search"
+        ReturnBK_BKID_TBX.Size = New Size(178, 16)
+        ReturnBK_BKID_TBX.TabIndex = 4
+        ' 
+        ' ReturnBK_BKName_TBX
+        ' 
+        ReturnBK_BKName_TBX.BackColor = Color.MidnightBlue
+        ReturnBK_BKName_TBX.BorderStyle = BorderStyle.None
+        ReturnBK_BKName_TBX.ForeColor = Color.White
+        ReturnBK_BKName_TBX.Location = New Point(214, 237)
+        ReturnBK_BKName_TBX.Name = "ReturnBK_BKName_TBX"
+        ReturnBK_BKName_TBX.Size = New Size(179, 16)
+        ReturnBK_BKName_TBX.TabIndex = 3
+        ' 
+        ' ReturnBK_CustName_TBX
+        ' 
+        ReturnBK_CustName_TBX.BackColor = Color.MidnightBlue
+        ReturnBK_CustName_TBX.BorderStyle = BorderStyle.None
+        ReturnBK_CustName_TBX.ForeColor = Color.White
+        ReturnBK_CustName_TBX.Location = New Point(261, 200)
+        ReturnBK_CustName_TBX.Name = "ReturnBK_CustName_TBX"
+        ReturnBK_CustName_TBX.Size = New Size(177, 16)
+        ReturnBK_CustName_TBX.TabIndex = 2
+        ' 
+        ' ReturnBK_Phone_TBX
+        ' 
+        ReturnBK_Phone_TBX.BackColor = Color.MidnightBlue
+        ReturnBK_Phone_TBX.BorderStyle = BorderStyle.None
+        ReturnBK_Phone_TBX.ForeColor = Color.White
+        ReturnBK_Phone_TBX.Location = New Point(206, 163)
+        ReturnBK_Phone_TBX.Name = "ReturnBK_Phone_TBX"
+        ReturnBK_Phone_TBX.PlaceholderText = "Mandatory for Search"
+        ReturnBK_Phone_TBX.Size = New Size(177, 16)
+        ReturnBK_Phone_TBX.TabIndex = 1
+        ' 
+        ' BKSearch_Close_btn
+        ' 
+        BKSearch_Close_btn.Font = New Font("Book Antiqua", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BKSearch_Close_btn.ForeColor = Color.Indigo
+        BKSearch_Close_btn.Location = New Point(522, 204)
+        BKSearch_Close_btn.Name = "BKSearch_Close_btn"
+        BKSearch_Close_btn.Size = New Size(115, 35)
+        BKSearch_Close_btn.TabIndex = 5
+        BKSearch_Close_btn.Text = "Close"
+        BKSearch_Close_btn.UseVisualStyleBackColor = True
+        ' 
+        ' BKSearch_Search_btn
+        ' 
+        BKSearch_Search_btn.Font = New Font("Book Antiqua", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BKSearch_Search_btn.ForeColor = Color.Indigo
+        BKSearch_Search_btn.Location = New Point(522, 152)
+        BKSearch_Search_btn.Name = "BKSearch_Search_btn"
+        BKSearch_Search_btn.Size = New Size(115, 35)
+        BKSearch_Search_btn.TabIndex = 3
+        BKSearch_Search_btn.Text = "Search"
+        BKSearch_Search_btn.UseVisualStyleBackColor = True
+        ' 
+        ' BKSearch_BKID_TBX
+        ' 
+        BKSearch_BKID_TBX.BackColor = Color.MidnightBlue
+        BKSearch_BKID_TBX.BorderStyle = BorderStyle.None
+        BKSearch_BKID_TBX.ForeColor = Color.White
+        BKSearch_BKID_TBX.Location = New Point(217, 216)
+        BKSearch_BKID_TBX.Name = "BKSearch_BKID_TBX"
+        BKSearch_BKID_TBX.PlaceholderText = "e.x. #1"
+        BKSearch_BKID_TBX.Size = New Size(181, 16)
+        BKSearch_BKID_TBX.TabIndex = 2
+        ' 
+        ' BKSearch_BKName_TBX
+        ' 
+        BKSearch_BKName_TBX.BackColor = Color.MidnightBlue
+        BKSearch_BKName_TBX.BorderStyle = BorderStyle.None
+        BKSearch_BKName_TBX.ForeColor = Color.White
+        BKSearch_BKName_TBX.Location = New Point(248, 152)
+        BKSearch_BKName_TBX.Name = "BKSearch_BKName_TBX"
+        BKSearch_BKName_TBX.PlaceholderText = "e.x. Java"
+        BKSearch_BKName_TBX.Size = New Size(181, 16)
+        BKSearch_BKName_TBX.TabIndex = 1
+        ' 
+        ' DataGridView1
+        ' 
+        DataGridView1.AllowUserToAddRows = False
+        DataGridView1.AllowUserToDeleteRows = False
+        DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        DataGridView1.BackgroundColor = Color.MidnightBlue
+        DataGridView1.BorderStyle = BorderStyle.None
+        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.GridColor = Color.Cyan
+        DataGridView1.Location = New Point(15, 293)
+        DataGridView1.Name = "DataGridView1"
+        DataGridView1.ScrollBars = ScrollBars.Vertical
+        DataGridView1.Size = New Size(1077, 330)
+        DataGridView1.TabIndex = 4
+        ' 
+        ' BKIssue_Close_btn
+        ' 
+        BKIssue_Close_btn.Font = New Font("Book Antiqua", 14.25F, FontStyle.Bold)
+        BKIssue_Close_btn.ForeColor = Color.Indigo
+        BKIssue_Close_btn.Location = New Point(505, 498)
+        BKIssue_Close_btn.Name = "BKIssue_Close_btn"
+        BKIssue_Close_btn.Size = New Size(115, 35)
+        BKIssue_Close_btn.TabIndex = 9
+        BKIssue_Close_btn.Text = "Close"
+        BKIssue_Close_btn.UseVisualStyleBackColor = True
+        ' 
+        ' BKIssue_Reset_btn
+        ' 
+        BKIssue_Reset_btn.Font = New Font("Book Antiqua", 14.25F, FontStyle.Bold)
+        BKIssue_Reset_btn.ForeColor = Color.Indigo
+        BKIssue_Reset_btn.Location = New Point(353, 498)
+        BKIssue_Reset_btn.Name = "BKIssue_Reset_btn"
+        BKIssue_Reset_btn.Size = New Size(115, 35)
+        BKIssue_Reset_btn.TabIndex = 8
+        BKIssue_Reset_btn.Text = "Reset"
+        BKIssue_Reset_btn.UseVisualStyleBackColor = True
+        ' 
+        ' BKIssue_Issue_btn
+        ' 
+        BKIssue_Issue_btn.Font = New Font("Book Antiqua", 14.25F, FontStyle.Bold)
+        BKIssue_Issue_btn.ForeColor = Color.Indigo
+        BKIssue_Issue_btn.Location = New Point(205, 498)
+        BKIssue_Issue_btn.Name = "BKIssue_Issue_btn"
+        BKIssue_Issue_btn.Size = New Size(115, 35)
+        BKIssue_Issue_btn.TabIndex = 7
+        BKIssue_Issue_btn.Text = "Issue"
+        BKIssue_Issue_btn.UseVisualStyleBackColor = True
+        ' 
+        ' BKIssue_ReturnBKDate_TBX
+        ' 
+        BKIssue_ReturnBKDate_TBX.Location = New Point(245, 327)
+        BKIssue_ReturnBKDate_TBX.Name = "BKIssue_ReturnBKDate_TBX"
+        BKIssue_ReturnBKDate_TBX.Size = New Size(180, 23)
+        BKIssue_ReturnBKDate_TBX.TabIndex = 6
+        ' 
+        ' BKIssue_IssueDate_TBX
+        ' 
+        BKIssue_IssueDate_TBX.Location = New Point(228, 281)
+        BKIssue_IssueDate_TBX.Name = "BKIssue_IssueDate_TBX"
+        BKIssue_IssueDate_TBX.Size = New Size(214, 23)
+        BKIssue_IssueDate_TBX.TabIndex = 5
+        ' 
+        ' BKIssue_Phone_TBX
+        ' 
+        BKIssue_Phone_TBX.BackColor = Color.MidnightBlue
+        BKIssue_Phone_TBX.BorderStyle = BorderStyle.None
+        BKIssue_Phone_TBX.ForeColor = Color.White
+        BKIssue_Phone_TBX.Location = New Point(569, 254)
+        BKIssue_Phone_TBX.Name = "BKIssue_Phone_TBX"
+        BKIssue_Phone_TBX.Size = New Size(179, 16)
+        BKIssue_Phone_TBX.TabIndex = 4
+        ' 
+        ' BKIssue_CustName_TBX
+        ' 
+        BKIssue_CustName_TBX.BackColor = Color.MidnightBlue
+        BKIssue_CustName_TBX.BorderStyle = BorderStyle.None
+        BKIssue_CustName_TBX.ForeColor = Color.White
+        BKIssue_CustName_TBX.Location = New Point(261, 251)
+        BKIssue_CustName_TBX.Name = "BKIssue_CustName_TBX"
+        BKIssue_CustName_TBX.Size = New Size(179, 16)
+        BKIssue_CustName_TBX.TabIndex = 3
+        ' 
+        ' BKIssue_BKID_TBX
+        ' 
+        BKIssue_BKID_TBX.BackColor = Color.MidnightBlue
+        BKIssue_BKID_TBX.BorderStyle = BorderStyle.None
+        BKIssue_BKID_TBX.ForeColor = Color.White
+        BKIssue_BKID_TBX.Location = New Point(494, 207)
+        BKIssue_BKID_TBX.Name = "BKIssue_BKID_TBX"
+        BKIssue_BKID_TBX.Size = New Size(179, 16)
+        BKIssue_BKID_TBX.TabIndex = 2
+        ' 
+        ' BKIssu_BKName_TBX
+        ' 
+        BKIssu_BKName_TBX.BackColor = Color.MidnightBlue
+        BKIssu_BKName_TBX.BorderStyle = BorderStyle.None
+        BKIssu_BKName_TBX.ForeColor = Color.White
+        BKIssu_BKName_TBX.Location = New Point(214, 207)
+        BKIssu_BKName_TBX.Name = "BKIssu_BKName_TBX"
+        BKIssu_BKName_TBX.Size = New Size(179, 16)
+        BKIssu_BKName_TBX.TabIndex = 1
         ' 
         ' Add_BK_Panel
         ' 
@@ -383,7 +909,7 @@ Partial Class Dashboard
         Add_BK_Panel.Dock = DockStyle.Fill
         Add_BK_Panel.Location = New Point(0, 0)
         Add_BK_Panel.Name = "Add_BK_Panel"
-        Add_BK_Panel.Size = New Size(1108, 642)
+        Add_BK_Panel.Size = New Size(1107, 637)
         Add_BK_Panel.TabIndex = 14
         ' 
         ' AddBK_Close_btn
@@ -425,7 +951,7 @@ Partial Class Dashboard
         AddBK_PubName_TBX.BorderStyle = BorderStyle.None
         AddBK_PubName_TBX.Font = New Font("Segoe UI", 9.0F)
         AddBK_PubName_TBX.ForeColor = Color.White
-        AddBK_PubName_TBX.Location = New Point(260, 335)
+        AddBK_PubName_TBX.Location = New Point(260, 333)
         AddBK_PubName_TBX.Name = "AddBK_PubName_TBX"
         AddBK_PubName_TBX.PlaceholderText = "e.x.  Oracle"
         AddBK_PubName_TBX.Size = New Size(182, 16)
@@ -449,7 +975,7 @@ Partial Class Dashboard
         AddBK_Authname_TBX.BorderStyle = BorderStyle.None
         AddBK_Authname_TBX.Font = New Font("Segoe UI", 9.0F)
         AddBK_Authname_TBX.ForeColor = Color.White
-        AddBK_Authname_TBX.Location = New Point(237, 252)
+        AddBK_Authname_TBX.Location = New Point(237, 250)
         AddBK_Authname_TBX.Name = "AddBK_Authname_TBX"
         AddBK_Authname_TBX.PlaceholderText = "e.x.  Herbert Schildt"
         AddBK_Authname_TBX.Size = New Size(179, 16)
@@ -473,7 +999,7 @@ Partial Class Dashboard
         AddBK_BKName_TBX.BorderStyle = BorderStyle.None
         AddBK_BKName_TBX.Font = New Font("Segoe UI", 9.0F)
         AddBK_BKName_TBX.ForeColor = Color.White
-        AddBK_BKName_TBX.Location = New Point(211, 208)
+        AddBK_BKName_TBX.Location = New Point(211, 206)
         AddBK_BKName_TBX.Name = "AddBK_BKName_TBX"
         AddBK_BKName_TBX.PlaceholderText = "e.x. Java"
         AddBK_BKName_TBX.Size = New Size(176, 16)
@@ -737,17 +1263,26 @@ Partial Class Dashboard
         Main_panel.ResumeLayout(False)
         Help_Panel.ResumeLayout(False)
         User_Panel.ResumeLayout(False)
-        Book_Panel.ResumeLayout(False)
         Cust_Panel.ResumeLayout(False)
+        Book_Panel.ResumeLayout(False)
         Reg_panel.ResumeLayout(False)
         Admin_Panel.ResumeLayout(False)
         Admin_Panel.PerformLayout()
         BkIssue_panel.ResumeLayout(False)
+        BkIssue_panel.PerformLayout()
         BkSearch_Panel.ResumeLayout(False)
+        BkSearch_Panel.PerformLayout()
+        BkReturn_Panel.ResumeLayout(False)
+        BkReturn_Panel.PerformLayout()
         SearchCustomer_Panel.ResumeLayout(False)
+        SearchCustomer_Panel.PerformLayout()
         CurrentProfile_Panel.ResumeLayout(False)
+        CurrentProfile_Panel.PerformLayout()
         AllUsers_Panel.ResumeLayout(False)
         Credits_Panel.ResumeLayout(False)
+        CType(DataGridView3, ComponentModel.ISupportInitialize).EndInit()
+        CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         Add_BK_Panel.ResumeLayout(False)
         Add_BK_Panel.PerformLayout()
         Menu.ResumeLayout(False)
@@ -775,7 +1310,6 @@ Partial Class Dashboard
     Friend WithEvents Reg_panel As Panel
     Friend WithEvents Admin_btn As Button
     Friend WithEvents Book_Panel As Panel
-    Friend WithEvents Cust_Panel As Panel
     Friend WithEvents User_Panel As Panel
     Friend WithEvents Admin_Reset_btn As Button
     Friend WithEvents Admin_Submit_btn As Button
@@ -784,10 +1318,8 @@ Partial Class Dashboard
     Friend WithEvents Help_Panel As Panel
     Friend WithEvents Creds_btn As Button
     Friend WithEvents Button8 As Button
-    Friend WithEvents CustSearch_btn As Button
     Friend WithEvents AddBK_btn As Button
     Friend WithEvents BKIssue_btn As Button
-    Friend WithEvents BKReturn_btn As Button
     Friend WithEvents BKSearch_btn As Button
     Friend WithEvents Admin_Pass_TBX As TextBox
     Friend WithEvents Admin_CPass_TBX As TextBox
@@ -810,4 +1342,47 @@ Partial Class Dashboard
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Dash_LogOut_btn As Button
+    Friend WithEvents BKIssue_ReturnBKDate_TBX As DateTimePicker
+    Friend WithEvents BKIssue_IssueDate_TBX As DateTimePicker
+    Friend WithEvents BKIssue_Phone_TBX As TextBox
+    Friend WithEvents BKIssue_CustName_TBX As TextBox
+    Friend WithEvents BKIssue_BKID_TBX As TextBox
+    Friend WithEvents BKIssu_BKName_TBX As TextBox
+    Friend WithEvents BKIssue_Issue_btn As Button
+    Friend WithEvents BKIssue_Close_btn As Button
+    Friend WithEvents BKIssue_Reset_btn As Button
+    Friend WithEvents BKSearch_BKID_TBX As TextBox
+    Friend WithEvents BKSearch_BKName_TBX As TextBox
+    Friend WithEvents BKSearch_Search_btn As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents BKSearch_Close_btn As Button
+    Friend WithEvents Cust_Panel As Panel
+    Friend WithEvents BKReturn_btn As Button
+    Friend WithEvents CustSearch_btn As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents ReturnBK_ReturnDate_TBX As TextBox
+    Friend WithEvents ReturnBK_IssueDate_TBX As TextBox
+    Friend WithEvents ReturnBK_BKID_TBX As TextBox
+    Friend WithEvents ReturnBK_BKName_TBX As TextBox
+    Friend WithEvents ReturnBK_CustName_TBX As TextBox
+    Friend WithEvents ReturnBK_Phone_TBX As TextBox
+    Friend WithEvents ReturnBK_Search_btn As Button
+    Friend WithEvents ReturnBK_Close_btn As Button
+    Friend WithEvents ReturnBK_Return_btn As Button
+    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents SearchCust_CustPhone_TBX As TextBox
+    Friend WithEvents SearchCust_CustName_TBX As TextBox
+    Friend WithEvents SearchCust_Search_btn As Button
+    Friend WithEvents CurrentProfile_Close_btn As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents CurrentProfile_CPass_TBX As TextBox
+    Friend WithEvents CurrentProfile_Pass_TBX As TextBox
+    Friend WithEvents DataGridView3 As DataGridView
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class

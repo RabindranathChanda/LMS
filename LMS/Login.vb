@@ -53,6 +53,10 @@ Public Class Login
             Me.Hide()
             Dashboard.Show()
             Dashboard.Label1.Text = Login_UName_TBX.Text
+        Else
+            MessageBox.Show("Wrong UserName or Password. Try Again!", "InputError", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Login_UName_TBX.Text = ""
+            Login_Pass_TBX.Text = ""
         End If
     End Sub
 

@@ -121,20 +121,35 @@
   <data name="passC icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\passC icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Current Profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Current Profile.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Credits" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Credits.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Setup Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Setup Icon.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Issue Book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Issue Book.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Login Form1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login Form1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Search Book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search Book.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add Books" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add Books.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dashboard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dashboard1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Return Book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Return Book.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dashboard.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search Customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search Customer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,13 +169,19 @@
   <data name="Reg_Panel_Admin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Reg_Panel_Admin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Splash Screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Splash Screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Login1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Add Books" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add Books.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Login Form1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login Form1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Splash Screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Splash Screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="All Users" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\All Users.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
