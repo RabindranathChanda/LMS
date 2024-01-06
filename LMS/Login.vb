@@ -2,23 +2,6 @@
 Imports System.Data.OleDb
 
 Public Class Login
-    'Public Conn As OleDbConnection
-    'Public Cmd As OleDbCommand
-    'Public da As OleDbDataAdapter
-    'Public dt As DataTable
-    'Public dr As OleDbDataReader
-    'Dim Sql_qry As String
-    'Public Sub DatabaseConnect()
-    '    '---------------- Connect Database Universally ----------------'
-    '    Try
-    '        Conn = New OleDbConnection
-    '        Conn.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Visual Studio Projects\LMS\College.mdb"
-    '        Conn.Open()
-    '    Catch ex As Exception
-    '        MsgBox(ex.Message)
-    '    End Try
-    'End Sub
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SS.Hide()
     End Sub
@@ -45,7 +28,7 @@ Public Class Login
             Exit Sub
         End If
 
-        Dim Con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Visual Studio Projects\LMS\College.mdb")
+        Dim Con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=LMS_Database.mdb")
         Dim cmd As New OleDbCommand("select * from Admin_Reg Where UName='" + Login_UName_TBX.Text + "'and PassWord='" + Login_Pass_TBX.Text + "'", Con)
         Con.Open()
         Dim sdr As OleDbDataReader = cmd.ExecuteReader()

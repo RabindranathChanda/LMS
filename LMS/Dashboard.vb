@@ -16,7 +16,7 @@ Public Class Dashboard
         '---------------- Connect Database Universally ----------------'
         Try
             Conn = New OleDbConnection
-            Conn.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Visual Studio Projects\LMS\College.mdb"
+            Conn.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=LMS_Database.mdb"
             Conn.Open()
         Catch ex As Exception
             MsgBox(ex.Message)
