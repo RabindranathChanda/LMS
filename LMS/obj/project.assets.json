@@ -307,11 +307,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual Studio Projects\\LMS\\LMS\\LMS.vbproj",
+      "projectUniqueName": "F:\\Visual Studio Projects\\VB.NET\\LMS\\LMS\\LMS.vbproj",
       "projectName": "LMS",
-      "projectPath": "D:\\Visual Studio Projects\\LMS\\LMS\\LMS.vbproj",
+      "projectPath": "F:\\Visual Studio Projects\\VB.NET\\LMS\\LMS\\LMS.vbproj",
       "packagesPath": "C:\\Users\\Rabindra\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual Studio Projects\\LMS\\LMS\\obj\\",
+      "outputPath": "F:\\Visual Studio Projects\\VB.NET\\LMS\\LMS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rabindra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -322,6 +322,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -334,6 +335,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -364,7 +370,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

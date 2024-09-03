@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sX9TxdxJlB13bPbU/gFjzg/F1/O3CYovckN/aZQUSLOLzP1aimZtnS67MzoJi2xyoqa5PR6Y4/UsUlsEHFNBcw==",
+  "dgSpecHash": "YYsiLby9Tsk=",
   "success": true,
-  "projectFilePath": "D:\\Visual Studio Projects\\LMS\\LMS\\LMS.vbproj",
+  "projectFilePath": "F:\\Visual Studio Projects\\VB.NET\\LMS\\LMS\\LMS.vbproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rabindra\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
     "C:\\Users\\Rabindra\\.nuget\\packages\\system.data.oledb\\8.0.0\\system.data.oledb.8.0.0.nupkg.sha512",

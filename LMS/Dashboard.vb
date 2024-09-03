@@ -9,7 +9,6 @@ Public Class Dashboard
     Public Cmd As OleDbCommand
     Public da As OleDbDataAdapter
     Public dt As DataTable
-    'Public dr As OleDbDataReader
     Public Result As Integer
     Dim Sql_qry As String
     Public Sub DatabaseConnect()
